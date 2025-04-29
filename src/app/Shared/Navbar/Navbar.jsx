@@ -1,59 +1,49 @@
-"use client";
-
+import { poppins } from "@/app/layout";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Search, ShoppingCart, User } from "lucide-react"; // icons
+import { Search, ShoppingCart, LayoutDashboard } from "lucide-react"; // icons
 import Image from "next/image";
 import Link from "next/link";
+import NavItem from "./NavItem";
 const Navbar = () => {
-    const menuItems = ["Home", "Products", "Blog", "AboutUs", "ContactUs"];
     return (
-    <header className="w-full bg-[#F6F6F6]">
+    <header className={`w-full bg-[#F6F6F6] pt-8 ${poppins.className}`}>
       <div className="max-w-7xl p-2 mx-auto flex items-center justify-between h-16">
         {/* Left: Logo */}
         <Link href="/" className="text-2xl font-bold text-[#32BADE]">
           <Image 
-            width={200}
-            height={70}
+            width={326}
+            height={68}
+            className="w-[200px] lg:w-[250px] xl:w-[326px]"
             src={'/images/website_logo.png'}
             alt="website logo"
             />
         </Link>
 
         {/* Menu Items (Desktop Only) */}
-        <nav className="hidden md:flex gap-8">
-          {menuItems.map((item, idx) => (
-            <Link key={idx} href={`/${item.toLowerCase()}`} className="text-gray-700 hover:text-[#32BADE] font-medium">
-              {item}
-            </Link>
-          ))}
+        <nav className="hidden md:flex lg:gap-4 md:gap-2 xl:gap-8">
+            <NavItem link={""} item={"Home"}/>
+            <NavItem link={"product"} item={"Product"}/>
+            <NavItem link={"blog"} item={"Blog"}/>
+            <NavItem link={"aboutUs"} item={"About Us"} />
+            <NavItem link={"contactUs"} item={"Contact Us"} />
         </nav>
 
         {/* Right: Icons */}
-        <div className="flex items-center gap-4">
-          <Search className="w-5 h-5 text-gray-600 cursor-pointer hover:text-[#32BADE]" />
-          <ShoppingCart className="w-5 h-5 text-gray-600 cursor-pointer hover:text-[#32BADE]" />
-          <Image 
-                width={40}
-                height={40}
-                src={'/images/navIcon.png'}
-                alt="navbar icon"/>
+        <div className="flex items-center md:gap-4 lg:gap-0">
+          <Search className="hoverIcon" />
+          <ShoppingCart className="hoverIcon" />
+          <LayoutDashboard className="hoverIcon hidden md:block"/>
           {/* Mobile Menu Button */}
           <Sheet>
             <SheetTrigger className="md:hidden">
-             <Image 
-                width={40}
-                height={40}
-                src={'/images/navIcon.png'}
-                alt="navbar icon"/>
+              <LayoutDashboard className="hoverIcon"/>
             </SheetTrigger>
-            <SheetContent side="left" className="w-64">
-              <nav className="flex p-4 flex-col gap-6 mt-10">
-                {menuItems.map((item, idx) => (
-                  <Link key={idx} href={`/${item.toLowerCase()}`} className="text-lg text-gray-800 hover:text-[#32BADE]">
-                    {item}
-                  </Link>
-                ))}
-              </nav>
+            <SheetContent side="left" className="w-64 p-4">
+                <NavItem link={""} item={"Home"}/>
+                <NavItem link={"product"} item={"Product"}/>
+                <NavItem link={"blog"} item={"Blog"}/>
+                <NavItem link={"aboutUs"} item={"About Us"} />
+                <NavItem link={"contactUs"} item={"Contact Us"} />
             </SheetContent>
           </Sheet>
         </div>

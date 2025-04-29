@@ -119,4 +119,13 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  .hoverIcon {
+    @apply w-13 h-13 p-3 flex items-center justify-center transition-all duration-100;
+  }
+  
+  .hoverIcon:hover {
+    @apply bg-[#32BADE] text-white rounded-full;
+  }
 }
+

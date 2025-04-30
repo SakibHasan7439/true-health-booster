@@ -20,7 +20,7 @@ const Navbar = () => {
         </Link>
 
         {/* Menu Items (Desktop Only) */}
-        <nav className="hidden md:flex lg:gap-4 md:gap-2 xl:gap-8">
+        <nav className="hidden lg:flex lg:gap-4 md:gap-2 xl:gap-8">
             <NavItem link={""} item={"Home"}/>
             <NavItem link={"product"} item={"Product"}/>
             <NavItem link={"blog"} item={"Blog"}/>
@@ -32,10 +32,10 @@ const Navbar = () => {
         <div className="flex items-center md:gap-4 lg:gap-0">
           <Search className="hoverIcon" />
           <ShoppingCart className="hoverIcon" />
-          <LayoutDashboard className="hoverIcon hidden md:block"/>
+          <LayoutDashboard className="hoverIcon hidden lg:block"/>
           {/* Mobile Menu Button */}
           <Sheet>
-            <SheetTrigger className="md:hidden">
+            <SheetTrigger className="lg:hidden">
               <LayoutDashboard className="hoverIcon"/>
             </SheetTrigger>
             <SheetContent side="left" className="w-64 p-4">

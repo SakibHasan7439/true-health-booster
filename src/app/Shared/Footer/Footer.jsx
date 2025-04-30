@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
 
           {/* Company Section */}
-          <div className="lg:col-span-2 md:col-span-1">
+          <div className="lg:col-span-2 lg:text-center md:col-span-1">
             <h2 className="text-lg font-semibold mb-4">Company</h2>
             <ul className="space-y-2">
               <li>

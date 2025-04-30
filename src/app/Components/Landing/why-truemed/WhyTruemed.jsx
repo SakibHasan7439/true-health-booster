@@ -1,5 +1,5 @@
-import SectionSubtitle from "../SectionSubtitle/SectionSubtitle";
-import SectionTitle from "../SectionTitle/SectionTitle";
+import SectionSubtitle from "../section-subtitle/SectionSubtitle";
+import SectionTitle from "../section-title/SectionTitle";
 import CertifiedBy from "./CertifiedBy";
 
 const WhyTruemed = () => {

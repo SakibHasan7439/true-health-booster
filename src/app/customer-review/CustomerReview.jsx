@@ -1,4 +1,4 @@
-import SectionTitle from "../Components/Landing/SectionTitle/SectionTitle";
+import SectionTitle from "../Components/Landing/section-title/SectionTitle";
 import { poppins } from "../layout";
 import ReviewCard from "./ReviewCard";
 

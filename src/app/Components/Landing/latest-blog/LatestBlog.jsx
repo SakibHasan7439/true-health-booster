@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from '../SectionTitle/SectionTitle';
-import SectionSubtitle from '../SectionSubtitle/SectionSubtitle';
+import SectionTitle from '../section-title/SectionTitle';
+import SectionSubtitle from '../section-subtitle/SectionSubtitle';
 import BlogCard from './BlogCard';
 import Button from '@/app/Shared/Button/Button';
 

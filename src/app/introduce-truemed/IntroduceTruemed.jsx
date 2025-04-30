@@ -1,5 +1,5 @@
-import SectionSubtitle from "../Components/Landing/SectionSubtitle/SectionSubtitle";
-import SectionTitle from "../Components/Landing/SectionTitle/SectionTitle";
+import SectionSubtitle from "../Components/Landing/section-subtitle/SectionSubtitle";
+import SectionTitle from "../Components/Landing/section-title/SectionTitle";
 import Button from "../Shared/Button/Button";
 
 const IntroduceTruemed = () => {

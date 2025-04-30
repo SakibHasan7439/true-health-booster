@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionTitle from '../SectionTitle/SectionTitle';
-import SupplementsSection from './SupplementsSection/SupplementsSection';
+import SectionTitle from '../section-title/SectionTitle';
+import SupplementsSection from './supplements-section/SupplementsSection';
 
 const ExploreSupplements = () => {
     return (

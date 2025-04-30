@@ -1,5 +1,5 @@
-import Brands from "../Brands/Brands";
-import BrandTitle from "../BrandTitle/BrandTitle";
+import Brands from "../brands/Brands";
+import BrandTitle from "../brand-title/BrandTitle";
 
 const PerfectBrands = () => {
     return (

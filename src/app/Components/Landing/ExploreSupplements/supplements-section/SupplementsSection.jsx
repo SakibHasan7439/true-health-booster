@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react";
-import SupplementCard from "../SupplementCard/SupplementCard";
+import SupplementCard from "../supplement-card/SupplementCard";
 
 const productsData = {
     trending: [

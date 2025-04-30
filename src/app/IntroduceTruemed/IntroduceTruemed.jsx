@@ -4,7 +4,7 @@ import Button from "../Shared/Button/Button";
 
 const IntroduceTruemed = () => {
     return (
-        <div className="bg-[#F8F8F8] px-2 py-8 md:py-12">
+        <div className="bg-[#F8F8F8] px-2 pt-16 md:pt-18 md:pb-30">
             <div className="max-w-7xl mx-auto">
                 <SectionTitle title={"Here We Introduce Truemed"}/>
                 <SectionSubtitle 

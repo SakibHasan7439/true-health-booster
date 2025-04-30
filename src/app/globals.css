@@ -136,5 +136,17 @@
     @apply w-10 h-6 bg-[#32BADE] px-2 py-1;
     border-radius: 4px !important;
   }
+
+  @media (max-width: 480px) {
+    .perfect-brand {
+      font-size: 14px !important;
+    }
+  }
+
+  @media (min-width: 560px) {
+    .perfect-brand {
+      font-size: 20px !important;
+    }
+  }
 }
 

@@ -5,32 +5,32 @@ const Brands = () => {
     return (
         <div className='grid max-w-7xl text-center place-items-center mx-auto justify-center grid-cols-12 lg:flex items-center lg:justify-between'>
             <Image 
-                height={100}
-                width={140}
+                height={50}
+                width={150}
                 alt='brand logo'
-                className="col-span-6 md:col-span-4 mb-12"
+                className="col-span-6 w-[135px] md:col-span-4 mb-12"
                 src={"/images/brand1.png"}/>
             <Image 
-                height={100}
-                width={140}
+                height={50}
+                width={200}
                 alt='brand logo'
                 className="col-span-6 md:col-span-4 mb-12"
                 src={"/images/brand2.png"}/>
             <Image 
-                height={100}
-                width={140}
+                height={50}
+                width={200}
                 alt='brand logo'
                 className="col-span-6 md:col-span-4 mb-12"
                 src={"/images/brand3.png"}/>
             <Image 
-                height={100}
-                width={140}
+                height={48}
+                width={120}
                 alt='brand logo'
-                className="col-span-6 md:col-span-4 mb-12"
+                className="col-span-6 md:col-span-4 pb-6 lg:pb-4 mb-12"
                 src={"/images/brand4.png"}/>
             <Image 
-                height={100}
-                width={140}
+                height={48}
+                width={165}
                 alt='brand logo'
                 className="col-span-6 md:col-span-4 mb-12"
                 src={"/images/brand5.png"}/>

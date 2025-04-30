@@ -30,7 +30,7 @@ const Hero = () => {
                             <p className='text-[#5d5d5d] lg:text-[18px] pb-8 lg:pb-10 max-w-[760px]'>
                                 Give your body the essential nutrients it deserves with our premium,all-natural supplements. Whether you're looking to boost your vitality, enhance performance, or maintain a healthy lifestyle, we've got you covered.
                             </p>
-                            <Button text={"Shop now"} />
+                            <Button text={"Shop now"} className={"px-18"} />
                             </div>
                             <Image 
                                 src={"/images/hero.png"}
@@ -49,7 +49,7 @@ const Hero = () => {
                             <p className='text-[#5d5d5d] lg:text-[18px] pb-8 lg:pb-10 max-w-[760px]'>
                                 Give your body the essential nutrients it deserves with our premium,all-natural supplements. Whether you're looking to boost your vitality, enhance performance, or maintain a healthy lifestyle, we've got you covered.
                             </p>
-                            <Button text={"Shop now"} />
+                            <Button text={"Shop now"} className={"px-18"} />
                             </div>
                             <Image 
                                 src={"/images/hero.png"}
@@ -68,7 +68,7 @@ const Hero = () => {
                             <p className='text-[#5d5d5d] lg:text-[18px] pb-8 lg:pb-10 max-w-[760px]'>
                                 Give your body the essential nutrients it deserves with our premium,all-natural supplements. Whether you're looking to boost your vitality, enhance performance, or maintain a healthy lifestyle, we've got you covered.
                             </p>
-                            <Button text={"Shop now"} />
+                            <Button text={"Shop now"} className={"px-18"} />
                             </div>
                             <Image 
                                 src={"/images/hero.png"}

@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 const OurBrands = () => {
     return (
-        <div className='px-4 lg:px-0 mt-10 mb-8 lg:mb-16'>
-            <div className='mb-8 lg:mb-8'>
+        <div className='px-4 lg:px-0 pt-10 pb-16 lg:pb-30'>
+            <div className='pb-16 lg:pb-30'>
                 <BrandTitle title={"Our Other Brands"}/>
                 <Brands />
             </div>

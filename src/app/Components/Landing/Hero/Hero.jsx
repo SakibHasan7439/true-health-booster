@@ -13,7 +13,8 @@ const Hero = () => {
         <div>
             <Swiper
                 pagination={{
-                    dynamicBullets: true,
+                    
+                    dynamicBullets: false,
                     }}
                     modules={[Pagination, Autoplay]}
                     autoplay={{

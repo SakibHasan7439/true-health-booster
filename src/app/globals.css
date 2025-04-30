@@ -132,9 +132,20 @@
     @apply  pb-10
   }
 
-  .swiper-pagination-bullet-active-main {
-    @apply w-10 h-6 bg-[#32BADE] px-2 py-1;
-    border-radius: 4px !important;
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #3dabc9 !important;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 16px !important;
+    height: 8px !important;
+    border-radius: 999px !important; /* makes it pill-shaped */
+    background-color: #32BADE; 
   }
 
   @media (max-width: 480px) {

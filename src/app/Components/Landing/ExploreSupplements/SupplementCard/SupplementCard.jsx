@@ -4,14 +4,14 @@ import React from 'react';
 
 const SupplementCard = ({ product }) => {
     return (
-        <div className="rounded-xl group relative w-full lg:w-[300px]">
+        <div className="rounded-xl group relative w-full">
             {/* Image container */}
             <div className="relative overflow-hidden rounded-xl">
                 <Image 
                     width={300}
                     height={300}
                     src={product.image} 
-                    className='w-full xl:w-full lg:w-[235px] mb-4 rounded-xl'
+                    className='w-full mb-4 rounded-xl'
                     alt={product.name}
                 />
                 

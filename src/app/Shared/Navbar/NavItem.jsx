@@ -16,7 +16,7 @@ const NavItem = ({link, item}) => {
         console.log(targetPath === pathname);
 
     return (
-        <Link href={targetPath} className={`text-[#2B2B2B]  flex hover:text-[#32BADE] items-center font-medium ${isActive ? 'font-semibold  text-[#32bade]' : ''}`}>
+        <Link href={targetPath} className={`text-primary-color  flex hover:text-[#32BADE] items-center font-medium ${isActive ? 'font-semibold  text-[#32bade]' : ''}`}>
             {item}{item !== "Contact Us" && <p className="xl:pl-8 hidden md:block lg:pl-4 md:pl-2 pb-2 font-bold text-2xl text-[#32BADE]">.</p> } 
         </Link>
     );

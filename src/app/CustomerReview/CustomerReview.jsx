@@ -1,4 +1,5 @@
 import SectionTitle from "../Components/Landing/SectionTitle/SectionTitle";
+import { poppins } from "../layout";
 import ReviewCard from "./ReviewCard";
 
 const reviews = [
@@ -28,9 +29,9 @@ const reviews = [
 ];
 const CustomerReview = () => {
     return (
-        <div className="max-w-7xl mx-auto py-6 md:py-12 px-2 md:px-4">
+        <div className={`max-w-7xl mx-auto pb-15 md:pb-30 px-2 md:px-4 ${poppins.className}`}>
             <SectionTitle title={"Satisfy Customer's Review"} />
-            <div className="grid grid-cols-1 pt-6 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 pt-4 md:grid-cols-3 gap-6">
                 {
                     reviews.map((review) => <ReviewCard 
                         key={review.id} review={review} 

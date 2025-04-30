@@ -44,7 +44,7 @@ const SupplementsSection = () => {
                     ))
                 }
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-2 xl:gap-6">
                 {
                     products.map((product) => <SupplementCard key={product.id} product={product}/>)
                 }

@@ -11,7 +11,7 @@ const SupplementCard = ({ product }) => {
                     width={300}
                     height={300}
                     src={product.image} 
-                    className='w-full lg:w-[300px] mb-4 rounded-xl'
+                    className='w-full xl:w-full lg:w-[235px] mb-4 rounded-xl'
                     alt={product.name}
                 />
                 
@@ -30,8 +30,8 @@ const SupplementCard = ({ product }) => {
             </div>
 
             {/* Product details */}
-            <div className="flex text-sm md:text-[16px] gap-2 mt-1">
-                <h4 className="leading-7 w-[80%]">{product.name}</h4>
+            <div className="flex text-sm xl:text-[16px] gap-2 mt-1">
+                <h4 className="leading-7 w-[80%] xl:w-[70%] lg:w-[50%]">{product.name.slice(0, 30)}</h4>
                 <div className='flex pt-2 gap-2'>
                     <Star color='#FACC15' fill='#FACC15' size={'15px'} /> 
                     <p className='text-yellow-500 text-sm'>{product.rating}</p>

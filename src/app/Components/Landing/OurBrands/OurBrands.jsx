@@ -6,7 +6,7 @@ import Image from 'next/image';
 const OurBrands = () => {
     return (
         <div className='px-4 lg:px-0 pt-10 pb-16 lg:pb-30'>
-            <div className='pb-16 lg:pb-30'>
+            <div className='pb-16 lg:pb-30 max-w-7xl mx-auto'>
                 <BrandTitle title={"Our Other Brands"}/>
                 <Brands />
             </div>

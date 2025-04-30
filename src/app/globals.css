@@ -148,5 +148,13 @@
       font-size: 20px !important;
     }
   }
+
+  .text-primary-color {
+    @apply text-[#2B2B2B];
+  }
+
+  .text-secondary-color {
+    @apply text-[#5D5D5D];
+  }
 }
 

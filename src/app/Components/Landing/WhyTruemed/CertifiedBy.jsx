@@ -1,17 +1,17 @@
 import Image from 'next/image';
 import React from 'react';
 
-const CertifiedBy = ({image, company}) => {
+const CertifiedBy = ({image, company, className}) => {
     return (
         <div>
             <Image 
-                width={150}
-                height={180}
+                width={140}
+                height={166}
                 src={image}
-                className='h-[180px] object-contain mb-6'
+                className={`object-contain mb-3 ${className}`}
                 alt='truemed certified company logo'
             />
-            <p className="font-semibold pl-6 text-sm">{company}</p>
+            <p className="font-semibold text-secondary-color pl-2 text-sm md:text-[18px]">{company}</p>
         </div>
     );
 };

@@ -33,19 +33,21 @@ const blogs = [
 ]
 const LatestBlog = () => {
     return (
-        <div className='max-w-7xl mx-auto mt-10 px-2 mb-8 md:mb-16'>
-            <div className='mb-6'>
+        <div className='max-w-7xl mx-auto px-2 pb-15 md:pb-30'>
+            <div>
                 <SectionTitle title={"Latest Blog Post"}/>
                 <SectionSubtitle subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla nunc in molestie feugiat. Nunc auctor consectetur elit, quis pulvina."}/>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-14">
                 {
                     blogs.map((blog) =><BlogCard key={blog.id} blog={blog}/>)
                 }
             </div>
             <div className="flex justify-center">
-                <Button text={"View All Blogs"}/>
+                <Button 
+                    className={"rounded-full px-15 h-[56px]"}
+                    text={"View All Blogs"}/>
             </div>
         </div>
     );

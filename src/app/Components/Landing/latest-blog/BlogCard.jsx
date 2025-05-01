@@ -17,7 +17,7 @@ const BlogCard = ({blog}) => {
           {blog.blogTitle}
         </h3>
 
-        <p className="text-secondary-color text-sm md:text-[15px] xl:text-[18px] md:leading-7 truncate md:overflow-visible md:whitespace-normal md:text-clip">
+        <p className="text-secondary-color text-sm md:text-[15px] xl:text-[18px] lg:leading-7 truncate md:overflow-visible md:whitespace-normal md:text-clip">
           {blog.blogSubtitle.slice(0, 46)}...
         </p>
 

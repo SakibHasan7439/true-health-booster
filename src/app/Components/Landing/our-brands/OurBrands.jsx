@@ -10,7 +10,7 @@ const OurBrands = () => {
                 <BrandTitle title={"Our Other Brands"}/>
                 <Brands />
             </div>
-            <div className="container mx-auto mb-12">
+            <div className="container mx-auto">
             <Image 
                 width={800}
                 height={500}

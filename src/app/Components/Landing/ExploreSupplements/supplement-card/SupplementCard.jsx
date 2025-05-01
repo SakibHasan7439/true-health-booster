@@ -16,7 +16,7 @@ const SupplementCard = ({ product }) => {
                 />
                 
                 {/* Hover Icons */}
-                <div className="absolute top-2 right-2 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute top-5 right-5 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <button className="bg-white p-2 rounded-full shadow hover:bg-[#32BADE] hover:text-white transition">
                         <Heart size={18} />
                     </button>
@@ -32,9 +32,9 @@ const SupplementCard = ({ product }) => {
             {/* Product details */}
             <div className="flex text-sm md:text-lg lg:text-[12px] xl:text-[16px] gap-2 mt-1">
                 <h4 className="leading-7 w-[80%] xl:w-[90%] lg:w-[80%]">{product.name}</h4>
-                <div className='flex pt-2 gap-2'>
+                <div className='flex items-center mb-6 gap-2'>
                     <Star color='#FACC15' fill='#FACC15' size={'15px'} /> 
-                    <p className='text-yellow-500 text-sm'>{product.rating}</p>
+                    <p className='text-yellow-500 text-[18px] lg:text-[15px]'>{product.rating}</p>
                 </div>
             </div>
             <div className="mt-2">

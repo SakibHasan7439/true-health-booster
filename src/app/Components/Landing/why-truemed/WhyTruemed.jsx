@@ -11,7 +11,7 @@ const WhyTruemed = () => {
             <Marquee 
                 speed={50}
                 pauseOnHover={true}>
-                    <div className="pt-6 flex items-center gap-10">
+                    <div className="pt-6 flex items-center gap-10 lg:gap-20">
                         <CertifiedBy
                             className={'xl:w-[110px] ml-5 xl:h-[156px] w-[90px] h-[146px]'}
                             image={"/images/ul 1.png"}

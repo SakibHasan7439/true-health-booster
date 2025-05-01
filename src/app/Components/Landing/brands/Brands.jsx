@@ -6,7 +6,7 @@ const Brands = () => {
     return (
         <div className='max-w-7xl mx-auto'>
             <Marquee pauseOnHover speed={50}>
-                <div className='flex items-center xl:gap-16 gap-8'>
+                <div className='flex items-center lg:gap-24 gap-8'>
                     <Image 
                         height={50}
                         width={150}

@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Right: Icons */}
         <div className="flex items-center md:gap-4 lg:gap-0">
           <Search className="hoverIcon" />
-          <ShoppingCart className="hoverIcon" />
+          <ShoppingCart className="hoverIcon hidden md:block" />
           <LayoutDashboard className="hoverIcon hidden lg:block"/>
           {/* Mobile Menu Button */}
           <Sheet>

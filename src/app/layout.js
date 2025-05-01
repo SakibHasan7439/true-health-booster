@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import "./globals.css";
 import Navbar from "./Shared/Navbar/Navbar";
 import Footer from "./Shared/Footer/Footer";
+import MobileNavbar from './Shared/mobile-navbar/MobileNavbar';
 
 const metadata = {
   title: "True Health Booster",
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar />
         {children}
+        <MobileNavbar/>
         <Footer />
       </body>
     </html>

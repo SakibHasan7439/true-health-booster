@@ -51,13 +51,26 @@ const IntroduceTruemed = () => {
                             alt="play button"
                         />
                     </div>
-                    <Modal 
+                    {/* <Modal 
                         open={isModalOpen} 
                         onCancel={handleCancel} 
+                        width={800}
+                        footer={null}
                          >
                     <iframe src="https://www.youtube.com/embed/r8YUIZGQ6ZU?si=E1AApxdYhqx_duwr" className="h-[200px] md:h-[320px] xl:h-[540px] xl:rounded-4xl rounded-2xl w-full mx-auto lg:w-full mb-14" title="YouTube video player" frameBorder="0"></iframe>
-                    </Modal>
-                
+                    </Modal> */}
+                <Modal
+                open={isModalOpen}
+                footer={null}
+                onCancel={() => setIsModalOpen(false)}
+                centered
+                width={800}
+            >
+                <div className="w-full aspect-video">
+                    <iframe width="100%"
+                        height="100%" src="https://www.youtube.com/embed/r8YUIZGQ6ZU?si=E1AApxdYhqx_duwr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </Modal>
                 <div className="flex justify-center">
                     <Button text={"Learn More About Truemed"}/>
                 </div>

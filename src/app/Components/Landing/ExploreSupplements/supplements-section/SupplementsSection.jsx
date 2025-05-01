@@ -37,14 +37,14 @@ const SupplementsSection = () => {
                     tabs.map((tab) =>(
                         <button key={tab.key}
                         onClick={()=>setActiveTab(tab.key)}
-                        className={`cursor-pointer h-[56px] w-full px-6 py-3 max-w-[205px] rounded-2xl text-black font-semibold text-sm ${activeTab === tab.key ? 'bg-[#32BADE] text-white' : 'text-gray-700'}`}
+                        className={`cursor-pointer h-[45px] w-[200px] xl:h-[56px] xl:w-full px-6 py-3 max-w-[205px] rounded-2xl text-black font-semibold text-sm ${activeTab === tab.key ? 'bg-[#32BADE] text-white' : 'text-gray-700'}`}
                         >
                         {tab.label}
                         </button>
                     ))
                 }
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-4 xl:gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-6 lg:gap-4 gap-2 xl:gap-6">
                 {
                     products.map((product) => <SupplementCard key={product.id} product={product}/>)
                 }

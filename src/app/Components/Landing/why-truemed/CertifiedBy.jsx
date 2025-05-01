@@ -11,7 +11,7 @@ const CertifiedBy = ({image, company, className}) => {
                 className={`object-contain mb-3 ${className}`}
                 alt='truemed certified company logo'
             />
-            <p className="font-semibold text-secondary-color pl-2 text-sm md:text-[18px]">{company}</p>
+            <p className="font-semibold text-secondary-color mb-6 pl-2 text-sm md:text-[18px]">{company}</p>
         </div>
     );
 };

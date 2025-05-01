@@ -4,7 +4,7 @@ import React from 'react';
 
 const SupplementCard = ({ product }) => {
     return (
-        <div className="rounded-xl group relative w-full mb-10 lg:mb-0">
+        <div className="rounded-xl group relative w-full mb-5 lg:mb-0">
             {/* Image container */}
             <div className="relative overflow-hidden rounded-xl">
                 <Image 
@@ -31,8 +31,8 @@ const SupplementCard = ({ product }) => {
 
             {/* Product details */}
             <div className="flex text-sm md:text-lg lg:text-[12px] xl:text-[16px] gap-2 mt-1">
-                <h4 className="leading-7 w-[80%] xl:w-[90%] lg:w-[80%]">{product.name}</h4>
-                <div className='flex items-center mb-6 gap-2'>
+                <h4 className="leading-7 truncate lg:truncate-none lg:overflow-visible lg:text-clip lg:whitespace-normal w-[80%] xl:w-[90%] lg:w-[80%]">{product.name}</h4>
+                <div className='flex items-center lg:mb-6 gap-2'>
                     <Star color='#FACC15' fill='#FACC15' size={'15px'} /> 
                     <p className='text-yellow-500 text-[18px] lg:text-[15px]'>{product.rating}</p>
                 </div>

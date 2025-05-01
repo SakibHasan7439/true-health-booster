@@ -17,7 +17,7 @@ const ReviewCard = ({review}) => {
                 height={50}
                 className="mb-3 mx-auto"
             />
-            <p className="text-center text-primary-color md:text-[18px] font-medium mb-5">
+            <p className="text-center text-primary-color md:text-[16px] lg:text-[18px] font-medium mb-5">
                 {review.description}
             </p>
             <Image 

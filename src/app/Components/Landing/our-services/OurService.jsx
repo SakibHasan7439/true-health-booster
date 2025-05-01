@@ -6,7 +6,7 @@ const OurService = ({image, serviceName}) => {
             <Image 
                 width={140}
                 height={140}
-                className="mb-6 mx-auto w-[110px] h-[110px] xl:w-[140px] xl:h-[140px]"
+                className="mb-6 mx-auto w-[100px] h-[100px] xl:w-[140px] xl:h-[140px]"
                 alt="service image"
                 src={image}
             />

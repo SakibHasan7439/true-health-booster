@@ -49,7 +49,7 @@ const ReviewCard = ({ review }) => {
         height={60}
         className="mb-3 mx-auto"
       />
-      <h3 className="text-xl font-semibold pb-1 text-center">{review?.name}</h3>
+      <h3 className="text-lg xl:text-xl font-semibold pb-1 text-center">{review?.name}</h3>
       <p className="text-center">{review.address}</p>
     </div>
   );

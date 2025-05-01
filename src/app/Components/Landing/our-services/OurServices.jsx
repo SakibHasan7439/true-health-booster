@@ -4,7 +4,7 @@ import Button from '@/app/Shared/Button/Button';
 
 const OurServices = () => {
     return (
-        <div className='max-w-7xl mx-auto mb-8 md:mb-16 lg:mb-30 px-4'>
+        <div className='max-w-7xl mx-auto mb-8 md:mb-16 lg:mb-20 xl:mb-30 px-4'>
             <div className='grid grid-cols-12 lg:flex lg:justify-between lg:items-center pb-4 md:pb-8'>
                 <OurService 
                     image={'/images/service4.png'}

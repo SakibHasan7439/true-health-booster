@@ -1,6 +1,6 @@
 import React from 'react';
 import BrandTitle from '../brand-title/BrandTitle';
-import Brands from '../brands-temp/Brands';
+import Brands from '../brands/Brands';
 import Image from 'next/image';
 
 const OurBrands = () => {

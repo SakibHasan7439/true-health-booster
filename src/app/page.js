@@ -1,4 +1,4 @@
-import Hero from "./Components/Landing/hero-temp/Hero";
+import Hero from "./Components/Landing/hero/Hero";
 import OurAchievements from "./Components/Landing/our-achievements/OurAchievements";
 import OurServices from "./Components/Landing/our-services/OurServices";
 import OurBrands from "./Components/Landing/our-brands/OurBrands";

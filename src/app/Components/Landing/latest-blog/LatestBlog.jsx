@@ -39,14 +39,14 @@ const LatestBlog = () => {
                 <SectionSubtitle subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla nunc in molestie feugiat. Nunc auctor consectetur elit, quis pulvina."}/>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-14">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-6 pb-14">
                 {
                     blogs.map((blog) =><BlogCard key={blog.id} blog={blog}/>)
                 }
             </div>
             <div className="flex justify-center">
                 <Button 
-                    className={"rounded-full px-15 h-[56px]"}
+                    className={"rounded-full px-6 h-[20px]"}
                     text={"View All Blogs"}/>
             </div>
         </div>

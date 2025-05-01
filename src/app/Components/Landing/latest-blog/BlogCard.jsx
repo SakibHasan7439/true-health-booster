@@ -22,12 +22,12 @@ const BlogCard = ({blog}) => {
         </p>
 
         <div className="flex gap-1 justify-between items-center text-gray-400 text-xs pt-2 border-t border-gray-100 mt-3">
-          <div className="flex gap-1">
+          <div className="flex gap-1 lg:items-center">
             <Calendar className="w-[14px] h-[14px] text-primary-color"/>
             <span className="font-semibold text-[11px] lg:text-[13px] xl:text-[16px] text-primary-color">{blog.postDate}</span>
           </div>
 
-          <div className="flex gap-1">
+          <div className="flex gap-1 lg:items-center">
             <Clock className="w-[14px] h-[14px] text-primary-color" />
             <span className="font-semibold text-primary-color text-[11px] lg:text-[13px] xl:text-[16px]">{blog.duration}</span>
           </div>

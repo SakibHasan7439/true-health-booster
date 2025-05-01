@@ -180,5 +180,9 @@
     @apply text-[#5D5D5D];
   }
 
+  .swiper-horizontal {
+    padding-bottom: 5px !important;
+  }
+
 }
 

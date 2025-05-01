@@ -32,7 +32,7 @@ const SupplementsSection = () => {
     const products = productsData[activeTab];
     return (
         <div className="px-2 pb-8 md:pb-10 lg:pb-20 xl:pb-30">
-            <div className="flex justify-center flex-col md:flex-row pb-14 items-center gap-4">
+            <div className="flex justify-center whitespace-nowrap overflow-x-auto flex-row pb-14 items-center gap-4 pl-60 md:pl-0 flow-auto">
                 {
                     tabs.map((tab) =>(
                         <button key={tab.key}

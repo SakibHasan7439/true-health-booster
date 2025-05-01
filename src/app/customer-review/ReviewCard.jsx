@@ -23,7 +23,7 @@ const ReviewCard = ({ review }) => {
         height={50}
         className="mb-3 mx-auto"
       />
-      <p
+      <div
         className="text-center tooltip text-primary-color md:text-[16px] lg:text-[18px] font-medium mb-5"
         data-tip={review.description}
       >
@@ -41,7 +41,7 @@ const ReviewCard = ({ review }) => {
             </Tooltip>
             </TooltipProvider>
         </div>
-      </p>
+      </div>
       <Image
         src={review.image}
         alt="customer image"

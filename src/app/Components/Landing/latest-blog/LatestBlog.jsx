@@ -39,7 +39,7 @@ const LatestBlog = () => {
                 <SectionSubtitle subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla nunc in molestie feugiat. Nunc auctor consectetur elit, quis pulvina."}/>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 pb-14">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-14">
                 {
                     blogs.map((blog) =><BlogCard key={blog.id} blog={blog}/>)
                 }

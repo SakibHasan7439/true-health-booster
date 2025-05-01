@@ -31,7 +31,7 @@ const SupplementsSection = () => {
     const [activeTab, setActiveTab] = useState('trending');
     const products = productsData[activeTab];
     return (
-        <div className="px-2 pb-16 md:pb-30">
+        <div className="px-2 pb-8 md:pb-10 lg:pb-20 xl:pb-30">
             <div className="flex justify-center flex-col md:flex-row pb-14 items-center gap-4">
                 {
                     tabs.map((tab) =>(
@@ -44,7 +44,7 @@ const SupplementsSection = () => {
                     ))
                 }
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-2 xl:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-4 xl:gap-6">
                 {
                     products.map((product) => <SupplementCard key={product.id} product={product}/>)
                 }

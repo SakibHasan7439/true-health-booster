@@ -148,9 +148,21 @@
     background-color: #32BADE; 
   }
 
+  @media (max-width: 540px) {
+    .swiper-pagination {
+      bottom: -30px !important; /* push it lower on small screens */
+    }
+  }
+
   @media (max-width: 480px) {
     .perfect-brand {
       font-size: 14px !important;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .title-small {
+      font-size: 13px !important;
     }
   }
 

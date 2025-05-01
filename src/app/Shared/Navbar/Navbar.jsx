@@ -6,7 +6,7 @@ import Link from "next/link";
 import NavItem from "./NavItem";
 const Navbar = () => {
     return (
-    <header className={`w-full bg-[#F6F6F6] pt-8 ${poppins.className}`}>
+    <header className={`w-full bg-[#F6F6F6] lg:pt-8 ${poppins.className}`}>
       <div className="max-w-7xl p-2 mx-auto flex items-center justify-between h-16">
         {/* Left: Logo */}
         <Link href="/" className="text-2xl font-bold text-[#32BADE]">

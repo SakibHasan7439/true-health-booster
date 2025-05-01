@@ -33,7 +33,7 @@ const blogs = [
 ]
 const LatestBlog = () => {
     return (
-        <div className='max-w-7xl mx-auto px-2 pb-15 md:pb-30'>
+        <div className='max-w-7xl mx-auto px-2 pb-10 lg:pb-20 xl:pb-30'>
             <div>
                 <SectionTitle title={"Latest Blog Post"}/>
                 <SectionSubtitle subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla nunc in molestie feugiat. Nunc auctor consectetur elit, quis pulvina."}/>

@@ -29,9 +29,9 @@ const reviews = [
 ];
 const CustomerReview = () => {
     return (
-        <div className={`max-w-7xl mx-auto pb-15 md:pb-30 px-2 md:px-4 ${poppins.className}`}>
+        <div className={`max-w-7xl mx-auto pb-10 lg:pb-20 xl:pb-30 px-2 md:px-4 ${poppins.className}`}>
             <SectionTitle title={"Satisfy Customer's Review"} />
-            <div className="grid grid-cols-1 pt-4 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 pt-4 md:grid-cols-3 gap-8 md:gap-6">
                 {
                     reviews.map((review) => <ReviewCard 
                         key={review.id} review={review} 

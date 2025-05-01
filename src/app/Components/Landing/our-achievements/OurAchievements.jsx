@@ -3,7 +3,7 @@ import Achievement from './Achievement';
 
 const OurAchievements = () => {
     return (
-        <div className='max-w-7xl mt-16 p-3 pb-8 pd:mb-16 lg:pb-30 mx-auto flex items-center flex-row  justify-between '>
+        <div className='max-w-7xl mt-10 md:mt-16 p-3 pb-8 pd:mb-16 lg:pb-20 xl:pb-30 mx-auto grid grid-cols-3'>
             <Achievement 
                 totalAmount={"+56,881"}
                 achievement={"Our Customer"}/>

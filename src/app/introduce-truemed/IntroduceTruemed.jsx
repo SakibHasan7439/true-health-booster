@@ -54,7 +54,7 @@ const IntroduceTruemed = () => {
                     <Modal 
                         open={isModalOpen} 
                         onCancel={handleCancel} 
-                        width="100%" >
+                         >
                     <iframe src="https://www.youtube.com/embed/r8YUIZGQ6ZU?si=E1AApxdYhqx_duwr" className="h-[200px] md:h-[320px] xl:h-[540px] xl:rounded-4xl rounded-2xl w-full mx-auto lg:w-full mb-14" title="YouTube video player" frameBorder="0"></iframe>
                     </Modal>
                 

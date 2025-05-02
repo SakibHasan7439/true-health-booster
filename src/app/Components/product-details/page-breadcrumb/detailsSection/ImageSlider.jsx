@@ -19,7 +19,7 @@ const ImageSlider = ({ data }) => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto flex">
+    <div>
        <div className="w-full flex sm:flex-row flex-col-reverse md:gap-6 gap-3 mb-4">
         <div className="hidden sm:block md:h-[500px]">
           <Swiper

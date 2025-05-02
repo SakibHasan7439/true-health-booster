@@ -2,6 +2,8 @@
 import ImageSlider from "./ImageSlider";
 import React, { useEffect, useState } from 'react';
 import ProductDescription from "./ProductDescription";
+import ProductInfo from "../../product-info/ProductInfo";
+import { poppins } from "@/app/layout";
 
 const DetailsSection = () => {
     const productData = {
@@ -29,19 +31,24 @@ const DetailsSection = () => {
     }, []);
 
     return (
-        <div className="max-w-7xl px-2 lg:px-0 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-10 section-bottom-spacing">
-            <ImageSlider data={productData}/>
-            {/* for small device only*/}
-            <ProductDescription 
-                name={data?.product?.name}
-                description={data?.product?.description}
-                rating={data?.product?.rating}
-                manufacturer={data?.product?.manufacturer}
-                manufacturer_description={data?.product?.manufacturer_description}
-                sales_volume={data?.product?.sales_volume}
-                categories={data?.product?.categories}
-                stock_status={data?.product?.stock_status}
-                price={data?.product?.price}
+        <div className={`max-w-7xl mx-auto ${poppins.className}`}>
+            <div className=" px-2 lg:px-0 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-10 section-bottom-spacing">
+                <ImageSlider data={productData}/>
+                {/* for small device only*/}
+                <ProductDescription 
+                    name={data?.product?.name}
+                    description={data?.product?.description}
+                    rating={data?.product?.rating}
+                    manufacturer={data?.product?.manufacturer}
+                    manufacturer_description={data?.product?.manufacturer_description}
+                    sales_volume={data?.product?.sales_volume}
+                    categories={data?.product?.categories}
+                    stock_status={data?.product?.stock_status}
+                    price={data?.product?.price}
+                />
+            </div>
+            <ProductInfo 
+                details={data?.product?.details}
             />
         </div>
     );

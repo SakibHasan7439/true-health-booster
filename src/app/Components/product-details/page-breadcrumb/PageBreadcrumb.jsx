@@ -4,7 +4,7 @@ import { ChevronRight, Home } from 'lucide-react';
 import Link from 'next/link';
 import { poppins } from '@/app/layout';
 const PageBreadcrumb = () => (
-  <div className={`max-w-7xl pb-6 lg:pb-10 mx-auto pt-6 md:pt-10`}>
+  <div className={`max-w-7xl pb-6 ${poppins.className} lg:pb-10 mx-auto pt-6 md:pt-10`}>
     <Breadcrumb
     separator={<ChevronRight size={14} className='mt-[5px]'/>}
     items={[

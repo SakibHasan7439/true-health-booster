@@ -1,9 +1,10 @@
 "use client"
 import Image from "next/image";
 import ProductOrder from "../product-order/ProductOrder";
+import { poppins } from "@/app/layout";
 const ProductDescription = ({name, description, rating, manufacturer, manufacturer_description, sales_volume, categories, stock_status, price, discount}) => {
     return (
-        <div className="px-2 lg:px-0">
+        <div className={`px-2 lg:px-0 ${poppins.className}`}>
             <div className="text-[14px] lg:text-lg pb-4 xl:pb-6 xl:text-2xl font-medium text-primary-color">
             <h3>{name}</h3>
             <h3>{description}</h3>

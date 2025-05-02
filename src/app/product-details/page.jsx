@@ -9,6 +9,11 @@ import ProductBanner from '../Components/product-details/product-banner/ProductB
 import ItemsInfo from '../Components/product-details/items-info/ItemsInfo';
 import PreferredProducts from '../Components/product-details/preferred-products/PreferedProducts';
 import OtherItemDetails from '../Components/product-details/other-item-details/OtherItemDetails';
+import IntroduceTruemed from '../Components/Landing/introduce-truemed/IntroduceTruemed';
+import ItemDescription from '../Components/product-details/item-description/ItemDescription';
+import LastCardSection from '../Components/product-details/last-card-section/LastCardSection';
+import ProductReview from '../Components/product-details/product-review/ProductReview';
+import JoinUs from '../Components/Landing/join-us/JoinUs';
 
 const ProductDetails = () => {
     return (
@@ -22,6 +27,20 @@ const ProductDetails = () => {
             <ItemsInfo />
             <PreferredProducts />
             <OtherItemDetails />
+            <LastCardSection />
+            <IntroduceTruemed 
+                buttonContainer={"hidden"}
+                sectionContainer={"!bg-white xl:!mb-0"} 
+            />
+            <div className='bg-[#F8F8F8] py-4 md:py-6 xl:py-10 mb-10 lg:mb-15 xl:mb-40'>
+                <ItemDescription 
+                    className={"max-w-7xl text-center mx-auto"}
+                    titleClass={"!block"}
+                    title={"About This Item"}
+                />
+            </div>
+            <ProductReview />
+            <JoinUs />
         </div>
     );
 };

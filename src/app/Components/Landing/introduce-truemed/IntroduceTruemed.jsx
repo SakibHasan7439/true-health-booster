@@ -6,7 +6,7 @@ import Button from "../../../Shared/Button/Button";
 import { Modal } from "antd";
 import Image from "next/image";
 
-const IntroduceTruemed = () => {
+const IntroduceTruemed = ({sectionContainer, buttonContainer}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const showModal = () => {
@@ -20,8 +20,9 @@ const IntroduceTruemed = () => {
     const handleCancel = () => {
       setIsModalOpen(false);
     };
+
     return (
-        <div className="bg-[#F8F8F8] px-2 pt-10 md:pt-12 pb-17 mb-6 lg:mb-14 xl:mb-30">
+        <div className={`bg-[#F8F8F8] ${sectionContainer} px-2 pt-10 md:pt-12 pb-17 mb-6 lg:mb-14 xl:mb-30`}>
             <div className="max-w-7xl mx-auto">
                 <SectionTitle title={"Here We Introduce Truemed"}/>
                 <SectionSubtitle 
@@ -51,14 +52,7 @@ const IntroduceTruemed = () => {
                             alt="play button"
                         />
                     </div>
-                    {/* <Modal 
-                        open={isModalOpen} 
-                        onCancel={handleCancel} 
-                        width={800}
-                        footer={null}
-                         >
-                    <iframe src="https://www.youtube.com/embed/r8YUIZGQ6ZU?si=E1AApxdYhqx_duwr" className="h-[200px] md:h-[320px] xl:h-[540px] xl:rounded-4xl rounded-2xl w-full mx-auto lg:w-full mb-14" title="YouTube video player" frameBorder="0"></iframe>
-                    </Modal> */}
+                    
                 <Modal
                 open={isModalOpen}
                 footer={null}
@@ -71,7 +65,7 @@ const IntroduceTruemed = () => {
                         height="100%" src="https://www.youtube.com/embed/r8YUIZGQ6ZU?si=E1AApxdYhqx_duwr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </Modal>
-                <div className="flex justify-center">
+                <div className={`flex justify-center ${buttonContainer}`}>
                     <Button text={"Learn More About Truemed"}/>
                 </div>
             </div>

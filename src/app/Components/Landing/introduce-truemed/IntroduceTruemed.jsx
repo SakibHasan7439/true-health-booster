@@ -1,8 +1,8 @@
 "use client"
 import { useState } from "react";
-import SectionSubtitle from "../Components/Landing/section-subtitle/SectionSubtitle";
-import SectionTitle from "../Components/Landing/section-title/SectionTitle";
-import Button from "../Shared/Button/Button";
+import SectionSubtitle from "../section-subtitle/SectionSubtitle";
+import SectionTitle from "../section-title/SectionTitle";
+import Button from "../../../Shared/Button/Button";
 import { Modal } from "antd";
 import Image from "next/image";
 

@@ -184,5 +184,15 @@
     padding-bottom: 5px !important;
   }
 
+  /* product details page */
+  .ant-breadcrumb a {
+    display: flex !important;
+    gap: 4px;
+    color: #2B2B2B !important;
+  }
+
+  .active-link {
+    color: #32BADE !important;
+  }
 }
 

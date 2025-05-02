@@ -1,6 +1,6 @@
 "use client"
-import SectionTitle from "../Components/Landing/section-title/SectionTitle";
-import { poppins } from "../layout";
+import SectionTitle from "../section-title/SectionTitle";
+import { poppins } from "../../../layout";
 import ReviewCard from "./ReviewCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';

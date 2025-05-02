@@ -28,14 +28,16 @@ const ProductOrder = ({categories, stock_status, price}) => {
                 <p className="text-sm xl:text-[16px] text-[#3B82fc]"><span className="font-semibold text-sm xl:text-lg text-primary-color">Stock: </span>{stock_status}</p>
             </div>
 
-            <div className="flex md:gap-6 xl:gap-0 xl:justify-between md:items-center pb-4 md:pb-4 xl:pb-10">
+            <div className="flex md:gap-6 xl:gap-0 justify-between items-center pb-4 md:pb-4 xl:pb-10">
                 <div className="flex">
-                    <p className="text-[#FA4444] text-[12px] lg:text-[16px]">{price?.discounted}</p>
-                    <p className="text-2xl md:text-xl lg:text-3xl text-[#32BADE] xl:text-5xl">{price?.original}</p>
+                    <p className="text-[#FA4444] flex flex-col text-[12px] lg:text-[16px]">{price?.discounted}
+                    <span className="text-secondary-color">{price?.saved}</span>
+                    </p>
+                    <p className="text-xl lg:text-3xl text-[#32BADE] xl:text-5xl">{price?.original}</p>
                 </div>
                 <div className="flex items-center gap-2 font-medium">
-                    <span>Quantity: </span>
-                    <div className="w-[100px] md:h-[40px] lg:w-[140px] flex items-center justify-between p-2 lg:p-4 text-primary-color h-[48px] xl:h-[56px] border rounded-md border-[#afaaaa]">
+                    <span className="text-[12px] md:text-[16px]">Quantity: </span>
+                    <div className="w-[100px] h-[40px] lg:w-[140px] flex items-center justify-between p-2 lg:p-4 text-primary-color xl:h-[56px] border rounded-md border-[#afaaaa]">
                         <CircleMinus 
                             onClick={()=>decrement()}
                             size={24} 

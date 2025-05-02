@@ -13,7 +13,8 @@
       "stock_status": "Available",
       "price": {
         "original": "$210.00",
-        "discounted": "-10%"
+        "discounted": "-10%",
+        "saved": "$52"
       },
       "details": {
         "type_of_packing": "Bottle",

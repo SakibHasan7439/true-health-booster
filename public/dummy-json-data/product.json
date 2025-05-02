@@ -15,7 +15,6 @@
         "original": "$210.00",
         "discounted": "-10%"
       },
-      "purchase_options": ["Buy Now", "Add To cart"],
       "details": {
         "type_of_packing": "Bottle",
         "colors": ["Green", "Pink", "Powder Blue", "Purple"],

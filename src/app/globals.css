@@ -194,5 +194,23 @@
   .active-link {
     color: #32BADE !important;
   }
+
+  .cut-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 860px) {
+    .cut-text {
+      overflow: visible;
+      text-overflow: clip;
+      white-space: normal;
+    }
+  }
+
+  .section-bottom-spacing {
+    @apply pb-10 lg:pb-15 xl:pb-30;
+  }
 }
 

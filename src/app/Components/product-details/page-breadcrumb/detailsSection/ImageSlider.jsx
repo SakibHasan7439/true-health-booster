@@ -21,7 +21,7 @@ const ImageSlider = ({ data }) => {
   return (
     <div>
        <div className="w-full flex sm:flex-row flex-col-reverse md:gap-6 gap-3 mb-4">
-        <div className="hidden sm:block md:h-[500px]">
+        <div className="hidden sm:block md:h-[350px] lg:h-[500px] pt-4">
           <Swiper
             watchSlidesProgress
             slidesPerView={4}
@@ -30,10 +30,10 @@ const ImageSlider = ({ data }) => {
             direction="vertical"
             navigation={true}
             modules={[Navigation]}
-            className="md:!h-[500px]"
+            className="md:h-[350px] lg:h-[500px] xl:h-[600px] object-cover"
           >
             {data?.images?.map((image, index) => (
-              <SwiperSlide key={index} className="!w-[90px] !h-[80px]">
+              <SwiperSlide key={index} className="!w-[90px] xl:!w-[100] xl:!h-[100] !h-[80px] xl:!mb-5 lg:!h-[50px] md:!h-[55px] md:!w-[50px]">
                 <Image
                   src={image}
                   alt={`Thumbnail ${index + 1}`}
@@ -62,7 +62,7 @@ const ImageSlider = ({ data }) => {
                   src={image}
                   alt={`Thumbnail ${index + 1}`}
                   width={500}
-                  height={500}
+                  height={614}
                   className="cursor-pointer object-fill rounded-md h-[80px]  w-full bg-[#f2f2f2] border border-primary"
                   onClick={() => handleThumbnailClick(image)} 
                 />
@@ -70,14 +70,14 @@ const ImageSlider = ({ data }) => {
             ))}
           </Swiper>
         </div>
-        <div className="w-full xl:h-[500px] lg:h-[400px]">
+        <div className="w-full xl:h-[600px] md:h-[400px]">
           {mainImage ? (
             <Image
               src={mainImage}
               alt="Product Main Image"
               width={500}
-              height={500}
-              className="rounded-lg lg:h-full w-full h-[300px] sm:h-[400px] md:h-[550px]  border object-fill bg-[#f2f2f2]"
+              height={614}
+              className="rounded-lg lg:h-full w-full h-[300px] sm:h-[400px] md:h-[350px] border object-fill bg-[#f2f2f2]"
             />
           ) : (
             <div className="w-full h-full bg-[#f2f2f2] flex justify-center items-center text-gray-500">

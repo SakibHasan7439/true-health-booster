@@ -4,6 +4,8 @@ import DetailsSection from '../Components/product-details/page-breadcrumb/detail
 import { poppins } from '../layout';
 import ExploreSupplements from '../Components/Landing/ExploreSupplements/ExploreSupplements';
 import FromTheBrand from '../Components/product-details/from-the-brand/FromTheBrand';
+import ArticleSection from '../Components/product-details/article-section/ArticleSection';
+import ProductBanner from '../Components/product-details/product-banner/ProductBanner';
 
 const ProductDetails = () => {
     return (
@@ -12,6 +14,8 @@ const ProductDetails = () => {
             <DetailsSection />
             <ExploreSupplements />
             <FromTheBrand />
+            <ArticleSection />
+            <ProductBanner />
         </div>
     );
 };

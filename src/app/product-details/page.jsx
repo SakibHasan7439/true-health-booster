@@ -6,6 +6,7 @@ import ExploreSupplements from '../Components/Landing/ExploreSupplements/Explore
 import FromTheBrand from '../Components/product-details/from-the-brand/FromTheBrand';
 import ArticleSection from '../Components/product-details/article-section/ArticleSection';
 import ProductBanner from '../Components/product-details/product-banner/ProductBanner';
+import ItemsInfo from '../Components/product-details/items-info/ItemsInfo';
 
 const ProductDetails = () => {
     return (
@@ -16,6 +17,7 @@ const ProductDetails = () => {
             <FromTheBrand />
             <ArticleSection />
             <ProductBanner />
+            <ItemsInfo />
         </div>
     );
 };

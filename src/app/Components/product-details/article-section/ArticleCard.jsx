@@ -8,7 +8,7 @@ const ArticleCard = ({article}) => {
                 height={320}
                 src={article?.image}
                 alt="article image"
-                className="w-full xl:h-[320px] h-[150px] md:h-[200px] mb-2 md:mb-4 xl:mb-6"
+                className="w-full xl:h-[320px] h-[150px] md:h-[200px] lg:h-[260px] object-cover mb-2 md:mb-4 xl:mb-6"
             />
             <div>
                 <ul className=" pb-2 md:pb-4 xl:pb-5 flex items-center gap-2">

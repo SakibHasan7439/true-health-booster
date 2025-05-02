@@ -7,6 +7,8 @@ import FromTheBrand from '../Components/product-details/from-the-brand/FromTheBr
 import ArticleSection from '../Components/product-details/article-section/ArticleSection';
 import ProductBanner from '../Components/product-details/product-banner/ProductBanner';
 import ItemsInfo from '../Components/product-details/items-info/ItemsInfo';
+import PreferredProducts from '../Components/product-details/preferred-products/PreferedProducts';
+import OtherItemDetails from '../Components/product-details/other-item-details/OtherItemDetails';
 
 const ProductDetails = () => {
     return (
@@ -18,6 +20,8 @@ const ProductDetails = () => {
             <ArticleSection />
             <ProductBanner />
             <ItemsInfo />
+            <PreferredProducts />
+            <OtherItemDetails />
         </div>
     );
 };

@@ -52,9 +52,9 @@ const ProductOrder = ({categories, stock_status, price}) => {
             </div>
 
             <div className="flex items-center gap-2 md:gap-4 xl:gap-6">
-                <button className={"bg-[#32BADE] text-white xl:px-20 lg:px-8 lg:py-2 xl:py-3 px-3 py-1 rounded-xl"}>Buy Now</button>
-                <button className={"bg-transparent xl:px-20 lg:px-8 px-2 py-1 lg:py-2 rounded-xl border border-[#32BADE] xl:py-3"}>Add To Cart</button>
-                <button className="rounded-2xl py-2 px-4 bg-transparent border border-[#32BADE] xl:py-3">
+                <button className={"bg-[#32BADE] text-white xl:px-20 lg:px-8 lg:py-2 xl:py-3 px-3 py-1 rounded-lg lg:rounded-xl"}>Buy Now</button>
+                <button className={"bg-transparent xl:px-20 lg:px-8 px-2 py-1 lg:py-2 rounded-lg lg:rounded-xl border border-[#32BADE] xl:py-3"}>Add To Cart</button>
+                <button className="rounded-xl lg:rounded-2xl py-1 px-2 bg-transparent border border-[#32BADE] xl:py-3">
                     <Heart size={24} color="#32BADE"/>
                 </button>
             </div>

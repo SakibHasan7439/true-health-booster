@@ -28,9 +28,7 @@ const ImageSlider = ({ data }) => {
             spaceBetween={12}
             mousewheel={true}
             direction="vertical"
-            navigation={true}
-            modules={[Navigation]}
-            className="md:h-[350px] lg:h-[500px] xl:h-[600px] object-cover"
+            className="md:h-[350px] lg:h-[500px] !p-[2px] xl:h-[600px] object-cover"
           >
             {data?.images?.map((image, index) => (
               <SwiperSlide key={index} className="!w-[90px] xl:!w-[100] xl:!h-[100] !h-[80px] xl:!mb-5 lg:!h-[50px] md:!h-[55px] md:!w-[50px]">
@@ -39,7 +37,7 @@ const ImageSlider = ({ data }) => {
                   alt={`Thumbnail ${index + 1}`}
                   width={100}
                   height={100}
-                  className="cursor-pointer object-fill rounded-md h-full w-full bg-[#f2f2f2] border border-primary"
+                  className={`cursor-pointer object-fill rounded-md h-full w-full ${ mainImage === image ? 'border-[#32BADE] border-l-[#32BADE] p-1 ring-2 ring-[#32BADE]' : 'border-[#f3f3f3]'}`}
                   onClick={() => handleThumbnailClick(image)} 
                 />
               </SwiperSlide>

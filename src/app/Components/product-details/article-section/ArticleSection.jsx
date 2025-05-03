@@ -25,7 +25,7 @@ const ArticleSection = () => {
                     title={"Related Article"}/>
                 <PageSectionSubtitle className={"mx-auto"} subtitle={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla nunc in molestie feugiat. Nunc auctor consectetur elit, quis pulvina."}/>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pb-5 lg:pb-10 xl:pb-14">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 xl:gap-6 pb-5 lg:pb-10 xl:pb-14">
                 {
                     articles.map((article) => <ArticleCard
                      key={article.id}

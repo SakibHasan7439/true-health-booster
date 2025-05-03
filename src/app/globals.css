@@ -224,7 +224,7 @@
     }
 
     .ant-tabs-content-holder {
-      @apply border border-[#EAE8EA] p-2 lg:p-6 xl:p-10 rounded-2xl;
+      @apply border border-[#EAE8EA] p-2 lg:p-6 xl:py-7 xl:px-10 rounded-2xl;
     }
 
     .ant-tabs-nav-list {
@@ -238,5 +238,12 @@
     .ant-tabs-nav {
       @apply !mb-0;
     }
+ 
+    @media (max-width: 768px){
+      .custom-nav-btn {
+        top: 60% !important;
+      }
+    }
+    
 }
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ItemShowcasingCard = ({ title, description, imageUrl, reverse }) => {
     return (
-        <div className={`bg-[#f7f7f7] p-6 md:p-12 rounded-3xl mb-10 lg:mb-15 xl:mb-30`}>
+        <div className={`bg-[#f7f7f7] p-6 md:p-12 xl:py-15 rounded-3xl mb-10 lg:mb-15 xl:mb-30`}>
         <div className={`flex flex-col max-w-7xl mx-auto md:flex-row ${reverse ? 'md:flex-row-reverse' : ''} gap-4 xl:gap-8`}>
             <Image
                 width={312}

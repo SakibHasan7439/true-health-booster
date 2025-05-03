@@ -30,7 +30,7 @@ const ProductDetails = () => {
             <LastCardSection />
             <IntroduceTruemed 
                 buttonContainer={"hidden"}
-                sectionContainer={"!bg-white lg:!mb-0"} 
+                sectionContainer={"!bg-white !pt-0 lg:!mb-0"} 
                 className={"lg:!pb-4 xl:!pb-10"}
             />
             <div className='bg-[#F8F8F8] py-4 md:py-6 xl:py-10 mb-10 lg:mb-15 xl:mb-40'>

@@ -62,28 +62,28 @@ const FromTheBrand = () => {
       </Swiper>
 
       {/* Custom navigation buttons */}
-      <button className="from-brand-prev custom-nav-btn"><ChevronLeft /></button>
-      <button className="from-brand-next custom-nav-btn"><ChevronRight /></button>
+      <button className="from-brand-prev cursor-pointer custom-nav-btn p-[6px] md:p-[10px] xl:p-[14px]"><ChevronLeft size={14}/></button>
+      <button className="from-brand-next cursor-pointer custom-nav-btn p-[6px] md:p-[10px] xl:p-[14px]"><ChevronRight size={14} /></button>
 
       <style>
         {`
           .custom-nav-btn {
             background-color: #73D6ED;
-            padding: 10px;
+            
             border-radius: 100%;
             color: black;
             position: absolute;
-            top: 50%;
+            top: 54%;
             transform: translateY(-50%);
             z-index: 10;
           }
 
           .from-brand-prev {
-            left: 10px;
+            left: 20px;
           }
 
           .from-brand-next {
-            right: 10px;
+            right: 20px;
           }
         `}
       </style>

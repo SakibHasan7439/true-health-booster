@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/thumbs";
 import Image from "next/image";
-import { Navigation } from "swiper/modules";
 
 const ImageSlider = ({ data }) => {
   const [mainImage, setMainImage] = useState(null);
@@ -31,7 +30,7 @@ const ImageSlider = ({ data }) => {
             className="md:h-[350px] lg:h-[500px] !p-[2px] xl:h-[600px] object-cover"
           >
             {data?.images?.map((image, index) => (
-              <SwiperSlide key={index} className="!w-[90px] xl:!w-[100] xl:!h-[100] !h-[80px] xl:!mb-5 lg:!h-[50px] md:!h-[55px] md:!w-[50px]">
+              <SwiperSlide key={index} className="!w-[90px] xl:!w-[100] xl:!h-[100] !h-[80px] xl:!mb-5 lg:!h-[66px] lg:!w-[66px] md:!h-[55px] md:!w-[50px]">
                 <Image
                   src={image}
                   alt={`Thumbnail ${index + 1}`}
@@ -50,8 +49,6 @@ const ImageSlider = ({ data }) => {
             watchSlidesProgress
             slidesPerView={4}
             spaceBetween={8}
-            navigation={true}
-            modules={[Navigation]}
             className="w-full"
           >
             {data?.images?.map((image, index) => (
@@ -59,23 +56,23 @@ const ImageSlider = ({ data }) => {
                 <Image
                   src={image}
                   alt={`Thumbnail ${index + 1}`}
-                  width={500}
+                  width={548}
                   height={614}
-                  className="cursor-pointer object-fill rounded-md h-[80px]  w-full bg-[#f2f2f2] border border-primary"
+                  className="cursor-pointer object-fill rounded-md h-[80px] w-full bg-[#f2f2f2] border border-primary"
                   onClick={() => handleThumbnailClick(image)} 
                 />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <div className="w-full xl:h-[600px] md:h-[400px]">
+        <div className="xl:h-[600px] md:h-[400px]">
           {mainImage ? (
             <Image
               src={mainImage}
               alt="Product Main Image"
-              width={500}
+              width={548}
               height={614}
-              className="rounded-lg lg:h-full w-full h-[300px] sm:h-[400px] md:h-[350px] border object-fill bg-[#f2f2f2]"
+              className="rounded-lg lg:h-full w-[260px] md:w-[400px] mx-auto xl:w-[548px] h-[300px] md:h-[350px] border object-fill bg-[#f2f2f2]"
             />
           ) : (
             <div className="w-full h-full bg-[#f2f2f2] flex justify-center items-center text-gray-500">

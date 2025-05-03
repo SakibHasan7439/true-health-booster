@@ -10,7 +10,7 @@ const ProductInfo = ({details}) =>{
       const items = [
         {
           key: '1',
-          label: <span className={`text-[14px] md:text-xl font-semibold ${poppins.className}`}>Description</span>,
+          label: <span className={`text-[14px] md:text-[16px] lg:text-xl font-semibold ${poppins.className}`}>Description</span>,
           children: <TextDescription details={details}/>,
         },
         {

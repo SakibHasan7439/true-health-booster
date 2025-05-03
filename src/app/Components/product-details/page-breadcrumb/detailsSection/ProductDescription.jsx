@@ -5,12 +5,12 @@ import { poppins } from "@/app/layout";
 const ProductDescription = ({name, description, rating, manufacturer, manufacturer_description, sales_volume, categories, stock_status, price, discount}) => {
     return (
         <div className={`px-2 lg:px-0 ${poppins.className}`}>
-            <div className="text-[14px] lg:text-lg pb-4 xl:pb-6 xl:text-2xl font-medium text-primary-color">
+            <div className="text-[14px] lg:text-lg pb-2 xl:pb-6 xl:text-2xl font-medium text-primary-color">
             <h3>{name}</h3>
             <h3>{description}</h3>
             </div>
 
-            <div className="flex items-center mb-4 xl:pb-6 gap-2 text-[16px] text-secondary-color">
+            <div className="flex items-center pb-2 xl:pb-6 gap-2 text-[16px] text-secondary-color">
                 <p className="text-[14px] lg:text-[16px]">{rating?.stars}</p>
                 <Image
                     width={116}

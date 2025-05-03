@@ -21,7 +21,7 @@ const PreferredProducts = () => {
   }, []);
   
   return (
-    <div className="section-bottom-spacing px-2 xl:px-0 max-w-7xl mx-auto">
+    <div className="pb-12 lg:pb-20 xl:pb-50 px-2 xl:px-0 max-w-7xl mx-auto">
       <SectionTitle
         title={"Most Preferred Products"}
         className={"max-w-[1280px] !text-left !pb-4 xl:!pb-6"}

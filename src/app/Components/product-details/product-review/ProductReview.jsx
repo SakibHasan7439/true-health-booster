@@ -5,6 +5,7 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { poppins } from "@/app/layout";
 
 const ProductReview = () => {
   const ratings = [50, 40, 30, 20, 10];
@@ -47,11 +48,10 @@ const ProductReview = () => {
             </div>
             <p className="text-sm text-gray-500 lg:pb-3">43 Global Rating</p>
         <div className="border-2 p-3 xl:p-5 rounded-2xl">
-
             <div className="space-y-3">
             {ratings.map((percent, i) => (
                 <div key={i} className="text-sm flex items-center gap-4">
-                    <span className="text-primary-color lg:w-[60px] xl:w-[50px] w-[50px]">{5 - i} star</span>
+                    <span className="text-primary-color xl:font-semibold lg:w-[60px] xl:w-[50px] w-[50px]">{5 - i} star</span>
                     <div className="w-full bg-gray-200 h-4 xl:h-7 rounded-full mt-1">
                         <div
                         className={`h-4 xl:h-7 rounded-full ${percent > 40 ? "bg-[#CAA204]": "bg-yellow-400"} `}
@@ -62,11 +62,11 @@ const ProductReview = () => {
             ))}
             </div>
 
-            <div className="mt-6 p-4 border rounded-lg">
+            <div className="mt-6 px-4 pt-4 border-t">
             <p className="font-medium text-primary-color mb-2">
                 Reviews This Product
             </p>
-            <p className="mb-2 text-[12px]">
+            <p className="pb-2 md:pb-4 xl:pb-6 text-[12px]">
                 Share Your Thoughts with others customer
             </p>
             <button className="w-full border border-[#32BADE] text-black py-2 rounded-4xl hover:bg-sky-50 transition">
@@ -77,7 +77,7 @@ const ProductReview = () => {
       </div>
 
       {/* Review + Carousel */}
-      <div className="lg:col-span-7 space-y-10">
+      <div className={`lg:col-span-7 space-y-10 ${poppins.className}`}>
         {/* Swiper */}
         <div className="relative">
         <Swiper
@@ -127,7 +127,7 @@ const ProductReview = () => {
             key={review?.id}
             className="p-4 border rounded-lg shadow-sm space-y-3"
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 lg:gap-6">
               <div className="w-10 h-10 relative rounded-full overflow-hidden">
                 <Image
                   src={review?.image}
@@ -137,7 +137,7 @@ const ProductReview = () => {
                 />
               </div>
               <div>
-                <p className="font-semibold">{review?.reviewer_name}</p>
+                <p className={`font-semibold  ${poppins.className}`}>{review?.reviewer_name}</p>
                 <div className="flex gap-1 text-yellow-400">
                   {[...Array(5)].map((_, i) => (
                     <Star fill="#FACC15" key={i} className="text-[#FACC15]" />
@@ -145,7 +145,7 @@ const ProductReview = () => {
                 </div>
               </div>
             </div>
-            <p className="text-sm text-primary-color xl:pb-5 xl:font-medium lg:px-10 xl:px-16">
+            <p className={`text-sm text-primary-color xl:pb-5 xl:font-medium lg:px-10 xl:px-16 ${poppins.className}`}>
               {review?.comment}
             </p>
             <div className="flex gap-3 xl:pb-5 lg:px-10 xl:px-20 text-sm text-gray-500">

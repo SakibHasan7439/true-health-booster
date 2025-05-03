@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import { Star } from "lucide-react";
+import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 
 const ProductReview = () => {
   const ratings = [50, 40, 30, 20, 10];
@@ -43,18 +43,18 @@ const ProductReview = () => {
             {[...Array(5)].map((_, i) => (
                 <Star fill="#FACC15" key={i} className="text-[#FACC15]" />
             ))}
-            <span className="font-semibold text-gray-700">4.7 Out Of 5</span>
+            <span className="font-semibold text-primary-color">4.7 Out Of 5</span>
             </div>
             <p className="text-sm text-gray-500 lg:pb-3">43 Global Rating</p>
         <div className="border-2 p-3 xl:p-5 rounded-2xl">
 
             <div className="space-y-3">
             {ratings.map((percent, i) => (
-                <div key={i} className="text-sm flex gap-4">
-                    <span className="text-primary-color w-[50px]">{5 - i} star</span>
-                    <div className="w-full bg-gray-200 h-7 rounded-full mt-1">
+                <div key={i} className="text-sm flex items-center gap-4">
+                    <span className="text-primary-color lg:w-[60px] xl:w-[50px] w-[50px]">{5 - i} star</span>
+                    <div className="w-full bg-gray-200 h-4 xl:h-7 rounded-full mt-1">
                         <div
-                        className={`h-7 rounded-full ${percent > 40 ? "bg-[#CAA204]": "bg-yellow-400"} `}
+                        className={`h-4 xl:h-7 rounded-full ${percent > 40 ? "bg-[#CAA204]": "bg-yellow-400"} `}
                         style={{ width: `${percent}%` }}
                         ></div>
                     </div>
@@ -80,51 +80,45 @@ const ProductReview = () => {
       <div className="lg:col-span-7 space-y-10">
         {/* Swiper */}
         <div className="relative">
-          <Swiper
-            navigation={{
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              }}
-              modules={[Navigation]}
-              className="relative rounded overflow-hidden"
-          >
-            {[...Array(5)].map((_, idx) => (
-              <SwiperSlide key={idx}>
-                <div className="flex justify-center gap-4 p-4">
-                  {reviewImages.map((img, index) => (
-                    <div
-                      key={index}
-                      className="relative h-[70px] w-[70px] lg:w-32 lg:h-32"
-                    >
-                      <Image
-                        src={img}
-                        alt={`product ${index}`}
-                        fill
-                        className="object-cover rounded h-[70px] w-[70px]"
-                      />
-                    </div>
-                  ))}
+        <Swiper
+        navigation={{
+          prevEl: '.swiper-button-prev-custom',
+          nextEl: '.swiper-button-next-custom',
+        }}
+        modules={[Navigation]}
+        className="swiper-container"
+      >
+        {[...Array(5)].map((_, idx) => (
+          <SwiperSlide key={idx}>
+            <div className="flex justify-center gap-4 p-4">
+              {reviewImages.map((img, index) => (
+                <div
+                  key={index}
+                  className="relative h-[70px] w-[70px] lg:w-32 lg:h-32"
+                >
+                  <Image
+                    src={img}
+                    alt={`product ${index}`}
+                    fill
+                    className="object-cover rounded h-[70px] w-[70px]"
+                  />
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <style jsx global>{`
-            .swiper-button-next,
-            .swiper-button-prev {
-              width: 32px;
-              height: 32px;
-              background: white;
-              border-radius: 9999px;
-              box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-              color: #333;
-            }
-
-            .swiper-button-next::after,
-            .swiper-button-prev::after {
-              font-size: 14px;
-              font-weight: bold;
-            }
-          `}</style>
+              ))}
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      {/* Custom navigation buttons with Lucide Icons */}
+      <div className="absolute top-1/2 -translate-y-1/2 left-2 z-10">
+        <button className="swiper-button-prev-custom bg-white bg-opacity-50 backdrop-blur-md rounded-full p-2 text-gray-800 hover:bg-opacity-70 transition-all duration-300">
+          <ChevronLeft className="h-5 w-5" />
+        </button>
+      </div>
+      <div className="absolute top-1/2 -translate-y-1/2 right-2 z-10">
+        <button className="swiper-button-next-custom bg-white bg-opacity-50 backdrop-blur-md rounded-full p-2 text-gray-800 hover:bg-opacity-70 transition-all duration-300">
+          <ChevronRight className="h-5 w-5" />
+        </button>
+      </div>
         </div>
 
         {/* Reviews */}

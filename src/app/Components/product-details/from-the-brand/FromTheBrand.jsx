@@ -11,7 +11,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const FromTheBrand = () => {
   return (
     <div className="section-bottom-spacing max-w-7xl mx-auto relative">
-      <div className="pb-6 lg:pb-10 xl:pb-14">
+      <div className="pb-6 px-2 xl:px-0 lg:pb-10 xl:pb-14">
         <SectionTitle
           className={"max-w-[1280px] lg:!pb-5 text-left"}
           title={"from the brand"}

@@ -219,8 +219,12 @@
       font-weight: 500;
     }
     
-    .custom-tabs .ant-tabs-tab-active {
-      color: #32BADE !important; /* Active tab color */
+    .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      @apply !text-[#32BADE]; /* Active tab color */
+    }
+
+    .ant-tabs-ink-bar {
+      @apply !bg-[#32BADE];
     }
 
     .ant-tabs-content-holder {

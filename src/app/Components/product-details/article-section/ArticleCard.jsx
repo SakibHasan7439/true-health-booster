@@ -8,7 +8,7 @@ const ArticleCard = ({article}) => {
                 height={320}
                 src={article?.image}
                 alt="article image"
-                className="w-full xl:h-[320px] h-[150px] md:h-[200px] lg:h-[260px] object-cover mb-2 md:mb-4 xl:mb-6"
+                className="w-full xl:h-[320px] h-[150px] md:h-[200px] lg:h-[260px] object-cover mb-2 md:mb-4 xl:mb-6 rounded-md"
             />
             <div>
                 <ul className=" pb-2 md:pb-4 xl:pb-5 flex items-center gap-2">
@@ -21,7 +21,7 @@ const ArticleCard = ({article}) => {
                         <p className="text-[10px] md:text-[12px] lg:text-[16px]">{article?.date}</p>
                     </li>
                 </ul>
-                <h3 className="text-[10px] md:text-[12px] lg:text-lg font-semibold lg:leading-7">{article?.title}</h3>
+                <h3 className="text-[10px] cut-text md:text-[12px] lg:text-lg font-semibold lg:leading-7">{article?.title}</h3>
             </div>
         </div>
     );

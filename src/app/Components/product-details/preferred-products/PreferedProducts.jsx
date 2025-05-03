@@ -19,9 +19,9 @@ const PreferredProducts = () => {
     };
     fetchProducts();
   }, []);
-  console.log(products);
+  
   return (
-    <div className="section-bottom-spacing max-w-7xl mx-auto">
+    <div className="section-bottom-spacing px-2 xl:px-0 max-w-7xl mx-auto">
       <SectionTitle
         title={"Most Preferred Products"}
         className={"max-w-[1280px] !text-left !pb-4 xl:!pb-6"}
@@ -33,7 +33,7 @@ const PreferredProducts = () => {
         }
       />
 
-      <div className="relative px-2 xl:px-0">
+      <div className="relative">
         <Swiper
           breakpoints={{
             320: { slidesPerView: 2 },

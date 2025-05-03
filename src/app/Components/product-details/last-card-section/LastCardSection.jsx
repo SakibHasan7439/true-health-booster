@@ -23,7 +23,7 @@ const LastCardSection = () => {
         },
     ]
     return (
-        <div className='max-w-7xl section-bottom-spacing mx-auto grid grid-cols-2 md:grid-cols-3 gap-2 xl:gap-6'>
+        <div className='max-w-7xl md:pb-5 px-2 xl:px-0 lg:pb-15 xl:pb-30 mx-auto grid grid-cols-2 md:grid-cols-3 gap-2 xl:gap-6'>
             {
                 productInfo.map((product)=> <ProductsCard 
                     key={product?.id} 

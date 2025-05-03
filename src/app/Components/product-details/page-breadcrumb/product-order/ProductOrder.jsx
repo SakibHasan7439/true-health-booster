@@ -17,7 +17,7 @@ const ProductOrder = ({categories, stock_status, price}) => {
     }
 
     return (
-        <div>
+        <div className="pb-6 md:pb-0">
             <div className="lg:flex flex-col items-center pb-2 xl:pb-10 lg:flex-row justify-between">
                 <p className="mb-2 xl:mb-4"><span className="font-semibold lg:text-sm text-[12px] xl:text-lg">Category: </span>
                     {

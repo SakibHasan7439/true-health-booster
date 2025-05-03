@@ -32,7 +32,7 @@ const DetailsSection = () => {
 
     return (
         <div className={`max-w-7xl mx-auto ${poppins.className}`}>
-            <div className=" px-2 lg:px-0 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-10 section-bottom-spacing">
+            <div className=" px-2 xl:px-0 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-10 lg:pb-5 xl:pb-30">
                 <ImageSlider data={productData}/>
                 {/* for small device only*/}
                 <ProductDescription 

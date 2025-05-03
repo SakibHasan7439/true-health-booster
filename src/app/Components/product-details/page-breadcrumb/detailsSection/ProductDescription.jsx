@@ -16,10 +16,10 @@ const ProductDescription = ({name, description, rating, manufacturer, manufactur
                     width={116}
                     height={16}
                     src={'/images/stars.png'}
-                    className="w-[100px] lg:w-[116px]"
+                    className="w-[100px] lg:w-[116px] xl:w-[140px]"
                     alt="review stars image"
                 />
-                <p className="text-[12px]">{rating?.count} rating</p>
+                <p className="text-[12px] xl:text-[16px]">{rating?.count} rating</p>
                 <p className="text-[#32BADE] hidden md:block border-l-2 border-l-[#32BADE] md:pl-6 pl-2 md:text-sm ml-2 lg:ml-5">Search this page</p>
             </div>
 

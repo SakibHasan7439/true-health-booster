@@ -22,7 +22,7 @@ const IntroduceTruemed = ({sectionContainer, buttonContainer, className}) => {
     };
 
     return (
-        <div className={`bg-[#F8F8F8] ${sectionContainer} px-2 pt-10 md:pt-12 pb-17 mb-6 lg:mb-14 xl:mb-30`}>
+        <div className={`bg-[#F8F8F8] ${sectionContainer} px-2 pt-10 md:pt-12 lg:pb-17 pb-10 md:mb-6 lg:mb-14 xl:mb-30`}>
             <div className="max-w-7xl mx-auto">
                 <SectionTitle className={className} title={"Here We Introduce Truemed"}/>
                 <SectionSubtitle 

@@ -18,8 +18,8 @@ const ProductOrder = ({categories, stock_status, price}) => {
 
     return (
         <div className="pb-6 md:pb-0">
-            <div className="lg:flex flex-col items-center pb-2 xl:pb-10 lg:flex-row justify-between">
-                <p className="mb-2 xl:mb-4"><span className="font-semibold lg:text-sm text-[12px] xl:text-lg">Category: </span>
+            <div className="lg:flex flex-col items-center pb-4 xl:pb-10 lg:flex-row justify-between">
+                <p className="pb-2 lg:pb-0"><span className="font-semibold lg:text-sm text-[12px] xl:text-lg">Category: </span>
                     {
                         categories && categories.map((category, index) => <span key={index} className="text-sm xl:text-[16px] text-[#1699BE]">{category}, </span>)
                         

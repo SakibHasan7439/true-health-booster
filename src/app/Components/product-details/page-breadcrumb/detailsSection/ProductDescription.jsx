@@ -25,7 +25,7 @@ const ProductDescription = ({name, description, rating, manufacturer, manufactur
 
             <p className="text-[#32BADE] pb-4 md:hidden md:border-l-2 border-l-[#32BADE] md:pl-6 md:ml-5">Search this page</p>
             <p className="text-secondary-color tru cut-text pb-4 text-sm xl:text-[16px] xl:pb-8">At <span>{manufacturer}</span> {manufacturer_description}</p>
-            <p className="capitalize pb-2 md:pb-4 xl:pb-6 border-b border-b-[#E8EAE8] text-[16px] font-semibold mb-4 xl:mb-8">
+            <p className="capitalize pb-2 md:pb-2 xl:pb-6 border-b border-b-[#E8EAE8] text-[16px] font-semibold mb-2 xl:mb-8">
                 <span className="text-[#32BADE]">{sales_volume}</span> to Post Month
             </p>
             <ProductOrder 

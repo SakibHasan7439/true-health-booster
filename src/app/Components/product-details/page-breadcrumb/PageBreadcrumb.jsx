@@ -3,8 +3,8 @@ import { Breadcrumb } from 'antd';
 import { ChevronRight, Home } from 'lucide-react';
 import Link from 'next/link';
 import { poppins } from '@/app/layout';
-const PageBreadcrumb = () => (
-  <div className={`max-w-7xl pb-6 ${poppins.className} lg:pb-10 px-2 xl:px-0 mx-auto pt-6 md:pt-10`}>
+const PageBreadcrumb = ({route, title, className}) => (
+  <div className={`max-w-7xl pb-6 ${poppins.className} ${className} lg:pb-10 px-2 xl:px-0 mx-auto pt-6 md:pt-10`}>
     <Breadcrumb
     separator={<ChevronRight size={14} className='mt-[5px]'/>}
     items={[
@@ -15,8 +15,8 @@ const PageBreadcrumb = () => (
         </Link>,
       },
       {
-        title: <Link className='items-center font-medium text-[16px]' href="/product-details">
-          <p className={`active-link ${poppins.className}`}>Products</p>
+        title: <Link className='items-center font-medium text-[16px]' href={`/${route}`}>
+          <p className={`active-link ${poppins.className}`}>{title}</p>
         </Link>,
       },
     ]}

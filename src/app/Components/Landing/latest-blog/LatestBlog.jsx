@@ -3,13 +3,14 @@ import SectionTitle from '../section-title/SectionTitle';
 import SectionSubtitle from '../section-subtitle/SectionSubtitle';
 import BlogCard from './BlogCard';
 import Button from '@/app/Shared/Button/Button';
+import Link from 'next/link';
 
 const blogs = [
     {
         id: 1,
         image: "https://i.ibb.co.com/Z6360RXC/image-4.png",
-        blogTitle: "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
-        blogSubtitle: "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
+        title: "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
+        description: "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
         postDate: "October 17, 2024",
         duration: "9 min read"
     },
@@ -17,16 +18,16 @@ const blogs = [
     {
         id: 2,
         image: "https://i.ibb.co.com/HfFW4jD9/image-5.png",
-        blogTitle: "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
-        blogSubtitle: "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
+        title: "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
+        description: "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
         postDate: "October 17, 2024",
         duration: "9 min read"
     },
     {
         id: 3,
         image: "https://i.ibb.co.com/PvpRP1rQ/image-6.png",
-        blogTitle: "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
-        blogSubtitle: "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
+        title: "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
+        description: "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
         postDate: "October 17, 2024",
         duration: "9 min read"
     },
@@ -45,9 +46,11 @@ const LatestBlog = () => {
                 }
             </div>
             <div className="flex justify-center">
-                <Button 
-                    className={"rounded-full px-6 h-[20px]"}
-                    text={"View All Blogs"}/>
+                <Link href={"/blog-page"}>
+                    <Button 
+                        className={"rounded-full px-6 h-[20px]"}
+                        text={"View All Blogs"}/>
+                </Link>
             </div>
         </div>
     );

@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/23SbJSBX/image-4.png",
+      "title": "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
+      "description": "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
+      "postDate": "October 17, 2024",
+      "duration": "9 min read"
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/TDtbfFpx/image-13.png",
+      "title": "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
+      "description": "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
+      "postDate": "October 17, 2024",
+      "duration": "9 min read"
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/2091qczj/image-6.png",
+      "title": "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
+      "description": "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
+      "postDate": "October 17, 2024",
+      "duration": "9 min read"
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/23SbJSBX/image-4.png",
+      "title": "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
+      "description": "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
+      "postDate": "October 17, 2024",
+      "duration": "9 min read"
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/TDtbfFpx/image-13.png",
+      "title": "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
+      "description": "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
+      "postDate": "October 17, 2024",
+      "duration": "9 min read"
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/2091qczj/image-6.png",
+      "title": "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog",
+      "description": "At Truemed Pharma, we prioritize your well-being by crafting customized and .....",
+      "postDate": "October 17, 2024",
+      "duration": "9 min read"
+    }
+  ]
+  

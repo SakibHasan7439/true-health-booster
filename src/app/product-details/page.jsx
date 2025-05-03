@@ -18,7 +18,10 @@ import JoinUs from '../Components/Landing/join-us/JoinUs';
 const ProductDetails = () => {
     return (
         <div className={poppins.className}>
-            <PageBreadcrumb/>
+            <PageBreadcrumb 
+                route={"product-details"}
+                title={"Products"}
+            />
             <DetailsSection />
             <ExploreSupplements />
             <FromTheBrand />

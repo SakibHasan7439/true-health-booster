@@ -48,7 +48,7 @@ const LatestBlog = () => {
             <div className="flex justify-center">
                 <Link href={"/blog-page"}>
                     <Button 
-                        className={"rounded-full px-6 h-[20px]"}
+                        className={"rounded-full  !h-[40px] lg:!h-[52px]"}
                         text={"View All Blogs"}/>
                 </Link>
             </div>

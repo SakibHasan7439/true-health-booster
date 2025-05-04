@@ -5,6 +5,8 @@ import Image from "next/image";
 import React from "react";
 import SectionTitle from "../Landing/section-title/SectionTitle";
 import { poppins, signika } from "@/app/layout";
+import SuggestPost from "./suggest-post/SuggestPost";
+import JoinUs from "../Landing/join-us/JoinUs";
 
 const BlogSectionDetails = () => {
   const { data, error, loading } = useFetch(
@@ -77,8 +79,9 @@ const BlogSectionDetails = () => {
           <h2 className={`${signika.className} mb-5 lg:mb-10 xl:mb-14 text-2xl md:text-3xl lg:text-4xl xl:text-[56px] font-semibold`}>
             Suggest Post
           </h2>
-          
       </div>
+      <SuggestPost />
+      <JoinUs />
     </div>
   );
 };

@@ -11,6 +11,7 @@ const LatestBlogsSection = () => {
                     key={blog?.id} 
                     blog={blog}
                     descriptionClass={"!text-[#11B091]"}
+                    descriptionSpacing={"!px-2 md:!px-5"}
                 />)
             }
         </div>

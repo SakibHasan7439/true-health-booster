@@ -248,6 +248,10 @@
         top: 60% !important;
       }
     }
+
+    .rating-star {
+      @apply w-[10px] md:w-[12px] xl:w-[18px];
+    }
     
 }
 

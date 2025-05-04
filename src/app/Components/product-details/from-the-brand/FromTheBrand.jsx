@@ -37,7 +37,7 @@ const FromTheBrand = () => {
             width={900}
             height={600}
             src={"/images/fromBrand1.png"}
-            className="w-full h-[230px] md:h-[300px] lg:h-[500px] xl:h-[600px]"
+            className="w-full h-[200px] md:h-[300px] lg:h-[500px] xl:h-[600px]"
             alt="slider image"
           />
         </SwiperSlide>
@@ -46,7 +46,7 @@ const FromTheBrand = () => {
             width={800}
             height={600}
             src={"/images/fromBrand1.png"}
-            className="w-full h-[230px] md:h-[300px] lg:h-[500px] xl:h-[600px]"
+            className="w-full h-[200px] md:h-[300px] lg:h-[500px] xl:h-[600px]"
             alt="slider image"
           />
         </SwiperSlide>
@@ -55,7 +55,7 @@ const FromTheBrand = () => {
             width={800}
             height={600}
             src={"/images/fromBrand1.png"}
-            className="w-full h-[230px] md:h-[300px] lg:h-[500px] xl:h-[600px]"
+            className="w-full h-[200px] md:h-[300px] lg:h-[500px] xl:h-[600px]"
             alt="slider image"
           />
         </SwiperSlide>

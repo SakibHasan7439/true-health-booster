@@ -2,7 +2,7 @@ import { Calendar, Clock } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-const BlogCard = ({blog, descriptionClass}) => {
+const BlogCard = ({blog, descriptionClass, descriptionSpacing}) => {
   return (
     <div className="rounded-2xl overflow-hidden shadow-md border border-gray-200">
       <Image 
@@ -12,7 +12,7 @@ const BlogCard = ({blog, descriptionClass}) => {
         src={blog.image} // replace with your image URL
         alt="Product"/>
 
-      <div className="px-5 pb-5">
+      <div className={`px-5 pb-5 ${descriptionSpacing}`}>
         <h3 className="text-base md:text-[12px] lg:text-[15px] xl:text-[18px] pb-3 font-semibold hover:text-[#00a1df] cursor-pointer truncate md:overflow-visible md:whitespace-normal md:text-clip">
           {blog.title}
         </h3>

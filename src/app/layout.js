@@ -1,4 +1,5 @@
 import { Poppins } from 'next/font/google'
+import { Signika } from 'next/font/google';
 
 import "./globals.css";
 import Navbar from "./Shared/Navbar/Navbar";
@@ -14,13 +15,19 @@ export const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'], // Choose the weights you need
   variable: '--font-poppins',
-})
+});
+
+export const signika = Signika({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'], // Choose the weights you want
+  variable: '--font-signika',
+});
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased`}
+        className={`${poppins.className} ${signika.className} antialiased`}
       >
         <Navbar />
         {children}

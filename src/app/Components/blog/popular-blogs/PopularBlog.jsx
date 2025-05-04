@@ -9,7 +9,7 @@ const PopularBlog = () => {
     return (
         <div className="grid pb-6 md:pb-12 xl:pb-26 grid-cols-2 md:grid-cols-3 gap-2 lg:gap-4 xl:gap-6">
             {
-                data.map((product) => <BlogCard key={product?.id} blog={product}/>)
+                data.map((product) => <BlogCard descriptionSpacing={"!px-2 md:!px-5"} key={product?.id} blog={product}/>)
             }
         </div>
     );

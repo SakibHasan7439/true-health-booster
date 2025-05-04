@@ -32,19 +32,19 @@ const OurProductCard = ({product}) => {
                 <h4 className="xl:leading-7 cut-text leading-5 pb-2 xl:pb-4 text-[13px] lg:text-[14px] xl:text-[18px] font-medium">{product?.title}</h4>
                 <div className='flex items-center lg:mb-6 pb-2 xl:pb-4 gap-2 border-b'>
                     <div className="flex items-center gap-[2px] md:gap-1">
-                        <Star  color='#FACC15' fill='#FACC15' size={'12px'} /> 
-                        <Star color='#FACC15' fill='#FACC15' size={'12px'} /> 
-                        <Star color='#FACC15' fill='#FACC15' size={'12px'} /> 
-                        <Star color='#FACC15' fill='#FACC15' size={'12px'} /> 
+                        <Star  color='#FACC15' fill='#FACC15' className="rating-star" /> 
+                        <Star color='#FACC15' fill='#FACC15'  className="rating-star" /> 
+                        <Star color='#FACC15' fill='#FACC15'  className="rating-star" /> 
+                        <Star color='#FACC15' fill='#FACC15'  className="rating-star" /> 
                         <StarHalf color='#FACC15' fill='#FACC15' size={'12px'} /> 
-                        <div className="border-r text-[9px] md:text-[12px] xl:text-[16px] pr-2 md:pr-4 xl:pr-6 mr-2 xl:mr-6">{product?.rating} 4.5</div>
+                        <div className="border-r text-[9px] md:text-[12px] xl:text-[16px] pr-1 md:pr-4 xl:pr-6 mr-1 xl:mr-4">{product?.rating} 4.5</div>
                     </div>
-                    <p className="text-[9px] md:text-[12px] xl:text-[16px] text-[#32BADE]">{product?.total_review} Reviews</p>
+                    <p className="text-[9px] md:text-[12px] xl:text-[14px] text-[#32BADE]">{product?.total_review} Reviews</p>
                 </div>
                 <div className="mt-2 flex items-center justify-between">
                 <span className="text-[#32BADE] font-bold">${product.price.toFixed(2)}</span>
                 <Button 
-                    className={"!py-2 !px-3 md:!px-5 lg:px-8 xl:!px-10 md:!py-3 xl:!h-[40px] !rounded-lg lg:rounded-2xl !text-sm"}
+                    className={"!py-1 !px-2 md:!px-5 lg:px-8 xl:!px-10 md:!py-3 xl:!h-[40px] !rounded-md md:!rounded-lg lg:rounded-2xl !text-sm"}
                     text={"Buy Now"}  
                 />
                 </div>

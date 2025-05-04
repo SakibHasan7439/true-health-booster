@@ -31,7 +31,7 @@ const ProductOrder = ({categories, stock_status, price}) => {
             <div className="flex md:gap-6 xl:gap-0 justify-between items-center pb-4 md:pb-4 xl:pb-10">
                 <div className="flex">
                     <p className="text-[#FA4444] flex flex-col text-[12px] lg:text-[16px]">{price?.discounted}
-                    <span className="text-secondary-color">{price?.saved}</span>
+                    <span className="text-secondary-color line-through">{price?.saved}</span>
                     </p>
                     <p className="text-xl lg:text-3xl text-[#32BADE] xl:text-5xl">{price?.original}</p>
                 </div>

@@ -1,9 +1,9 @@
-import React from 'react';
 import SectionTitle from '../section-title/SectionTitle';
 import SectionSubtitle from '../section-subtitle/SectionSubtitle';
 import BlogCard from './BlogCard';
 import Button from '@/app/Shared/Button/Button';
 import Link from 'next/link';
+
 
 const blogs = [
     {

@@ -18,7 +18,7 @@ const ImageSlider = ({ data }) => {
   };
 
   return (
-    <div>
+    <div className="xl:w-[54%]">
        <div className="w-full flex sm:flex-row flex-col-reverse md:gap-6 gap-3 mb-4">
         <div className="hidden sm:block md:h-[350px] lg:h-[500px] pt-4">
           <Swiper

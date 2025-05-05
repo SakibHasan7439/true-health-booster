@@ -18,15 +18,18 @@ const OurProductsSection = () => {
           spaceBetween={20}
           className="mySwiper"
           breakpoints={{
-            375: {
+            330: {
               slidesPerView: 2,
+              spaceBetween: 8,
             },
 
             768: {
               slidesPerView: 3,
+              spaceBetween: 12,
             },
             1024: {
               slidesPerView: 4,
+              spaceBetween: 20,
             },
           }}
           navigation={{

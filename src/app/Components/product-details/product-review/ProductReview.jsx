@@ -94,7 +94,7 @@ const ProductReview = () => {
               {reviewImages.map((img, index) => (
                 <div
                   key={index}
-                  className="relative h-[70px] w-[70px] lg:w-32 lg:h-32"
+                  className="relative h-[70px] w-[70px] lg: xl:w-[32] md:w-24 md:h-24 xl:h-32"
                 >
                   <Image
                     src={img}
@@ -109,13 +109,13 @@ const ProductReview = () => {
         ))}
       </Swiper>
       {/* Custom navigation buttons with Lucide Icons */}
-      <div className="absolute top-1/2 -translate-y-1/2 left-2 z-10">
-        <button className="swiper-button-prev-custom bg-white bg-opacity-50 backdrop-blur-md rounded-full p-2 text-gray-800 hover:bg-opacity-70 transition-all duration-300">
+      <div className="absolute top-1/2 -translate-y-1/2 left-[11px] z-10">
+        <button className="swiper-button-prev-custom border bg-white bg-opacity-50 backdrop-blur-md rounded-sm p-2 cursor-pointer text-gray-800 hover:bg-opacity-70 transition-all duration-300">
           <ChevronLeft className="h-5 w-5" />
         </button>
       </div>
-      <div className="absolute top-1/2 -translate-y-1/2 right-2 z-10">
-        <button className="swiper-button-next-custom bg-white bg-opacity-50 backdrop-blur-md rounded-full p-2 text-gray-800 hover:bg-opacity-70 transition-all duration-300">
+      <div className="absolute top-1/2 -translate-y-1/2 right-[11px] z-10">
+        <button className="swiper-button-next-custom border bg-white bg-opacity-50 backdrop-blur-md rounded-sm cursor-pointer p-2 text-gray-800 hover:bg-opacity-70 transition-all duration-300">
           <ChevronRight className="h-5 w-5" />
         </button>
       </div>

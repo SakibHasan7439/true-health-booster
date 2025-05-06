@@ -4,9 +4,9 @@ import Button from "@/app/Shared/Button/Button";
 
 const UniqueSells = () => {
     return (
-        <div className="container relative rounded-xl mx-auto w-full md:h-[360px] h-[540px] bg-cover bg-center lg:h-[460px] xl:h-[804px] mb-10 lg:mb-15 xl:mb-30" 
+        <div className="container relative rounded-xl mx-auto w-full md:h-[360px] h-[580px] bg-cover bg-center lg:h-[460px] xl:h-[804px] mb-10 lg:mb-15 xl:mb-30" 
             style={{backgroundImage:"url('/images/image-(25).png')"}}>
-            <div className="w-full md:h-[360px] h-[540px] bg-cover bg-center lg:h-[460px] xl:h-[804px] absolute top-0 left-0 rounded-xl" style={{backgroundImage:"url('/images/image (26).png')"}}>
+            <div className="w-full md:h-[360px] h-[580px] bg-cover bg-center lg:h-[460px] xl:h-[804px] absolute top-0 left-0 rounded-xl" style={{backgroundImage:"url('/images/image (26).png')"}}>
             <div className="pt-8 lg:pt-16 xl:pt-[204px] pb-8 lg:pb-10 xl:pb-[130px]">
                 <div className={`max-w-7xl px-2 lg:px-6 xl:px-0 flex flex-col md:items-center md:flex-row md:gap-10 lg:gap-15 xl:gap-[127px] mx-auto text-white ${poppins.className}`}>
                     <div className="xl:w-[55%] md:w-[70%] mb-6 md:mb-0">

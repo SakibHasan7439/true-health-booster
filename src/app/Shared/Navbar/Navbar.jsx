@@ -23,7 +23,7 @@ const Navbar = () => {
         <nav className="hidden lg:flex lg:gap-4 md:gap-2 xl:gap-8">
             <NavItem link={""} item={"Home"}/>
             <NavItem link={"product"} item={"Product"}/>
-            <NavItem link={"blog"} item={"Blog"}/>
+            <NavItem link={"blog-page"} item={"Blog"}/>
             <NavItem link={"about-us"} item={"About Us"} />
             <NavItem link={"contact-us"} item={"Contact Us"} />
         </nav>
@@ -41,7 +41,7 @@ const Navbar = () => {
             <SheetContent side="left" className="w-64 p-4">
                 <NavItem link={""} item={"Home"}/>
                 <NavItem link={"product"} item={"Product"}/>
-                <NavItem link={"blog"} item={"Blog"}/>
+                <NavItem link={"blog-page"} item={"Blog"}/>
                 <NavItem link={"about-us"} item={"About Us"} />
                 <NavItem link={"contact-us"} item={"Contact Us"} />
             </SheetContent>

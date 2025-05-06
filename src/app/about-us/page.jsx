@@ -4,6 +4,7 @@ import UniqueSells from '../Components/about-us-page/unique-selling/UniqueSells'
 import WhyTruemed from '../Components/Landing/why-truemed/WhyTruemed';
 import LatestBlog from '../Components/Landing/latest-blog/LatestBlog';
 import JoinUs from '../Components/Landing/join-us/JoinUs';
+import PageBreadcrumb from '../Components/product-details/page-breadcrumb/PageBreadcrumb';
 
 const AboutUs = () => {
     return (

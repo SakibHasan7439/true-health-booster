@@ -9,12 +9,12 @@ const Checkout = () => {
         <div>
             <PageBreadcrumb title={"Check Out"} route={"checkout"}/>
             <div className='max-w-7xl mx-auto px-2 xl:px-0'>
-                <div className='grid grid-cols-1 md:grid-cols-10 gap-6 mb-10 lg:mb-15 xl:mb-30'>
-                    <div className="lg:col-span-6 xl:col-span-7 md:col-span-5">
+                <div className='grid grid-cols-1 md:grid-cols-10 gap-2 lg:gap-6 mb-10 lg:mb-15 xl:mb-30'>
+                    <div className="md:col-span-6 mb-6 md:mb-0">
                         <CheckoutForm />
                     </div>
-                    <div className="lg:col-span-4 xl:col-span-3 md:col-span-5">
-                        <CheckoutDetails />
+                    <div className="md:col-span-4">
+                        <CheckoutDetails title={"Checkout"}/>
                     </div>
                 </div>
                 <JoinUs />

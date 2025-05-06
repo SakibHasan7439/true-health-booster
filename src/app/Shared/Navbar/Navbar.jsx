@@ -1,12 +1,16 @@
+"use client"
 import { poppins } from "@/app/layout";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Search, ShoppingCart, LayoutDashboard } from "lucide-react"; // icons
 import Image from "next/image";
 import Link from "next/link";
 import NavItem from "./NavItem";
+import { useRouter } from "next/navigation";
 const Navbar = () => {
+  const router = useRouter();
+  const isHomePage = router.pathname === "/";
     return (
-    <header className={`w-full bg-[#F6F6F6] lg:pt-8 ${poppins.className}`}>
+    <header className={`w-full ${isHomePage ? "bg-[#F6F6F6]" : "bg-[#ffffff]"}  lg:pt-8 ${poppins.className}`}>
       <div className="max-w-7xl p-2 mx-auto flex items-center justify-between h-16">
         {/* Left: Logo */}
         <Link href="/" className="text-2xl font-bold text-[#32BADE]">

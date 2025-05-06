@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 const ContactFormSection = () => {
     return (
         <div className="flex items-center mb-6 lg:mb-15 xl:mb-30 border rounded-xl flex-col md:flex-row gap-3 lg:gap-4 xl:gap-[30px]">
-            <div className="md:w-[40%] w-full">
+            <div className="md:w-[40%] xl:w-[50%] w-full">
                 <Image 
                     width={583}
                     height={788}

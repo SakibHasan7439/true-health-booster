@@ -12,7 +12,7 @@ const BlogCard = ({blog, descriptionClass, descriptionSpacing}) => {
         src={blog.image} // replace with your image URL
         alt="Product"/>
 
-      <div className={`px-5 pb-5 ${descriptionSpacing}`}>
+      <div className={`px-2 lg:px-5 pb-5 ${descriptionSpacing}`}>
         <h3 className="text-base md:text-[12px] lg:text-[15px] xl:text-[18px] pb-3 font-semibold hover:text-[#00a1df] cursor-pointer truncate md:overflow-visible md:whitespace-normal md:text-clip">
           {blog.title}
         </h3>

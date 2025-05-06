@@ -24,8 +24,8 @@ const Navbar = () => {
             <NavItem link={""} item={"Home"}/>
             <NavItem link={"product"} item={"Product"}/>
             <NavItem link={"blog"} item={"Blog"}/>
-            <NavItem link={"aboutUs"} item={"About Us"} />
-            <NavItem link={"contactUs"} item={"Contact Us"} />
+            <NavItem link={"about-us"} item={"About Us"} />
+            <NavItem link={"contact-us"} item={"Contact Us"} />
         </nav>
 
         {/* Right: Icons */}
@@ -42,8 +42,8 @@ const Navbar = () => {
                 <NavItem link={""} item={"Home"}/>
                 <NavItem link={"product"} item={"Product"}/>
                 <NavItem link={"blog"} item={"Blog"}/>
-                <NavItem link={"aboutUs"} item={"About Us"} />
-                <NavItem link={"contactUs"} item={"Contact Us"} />
+                <NavItem link={"about-us"} item={"About Us"} />
+                <NavItem link={"contact-us"} item={"Contact Us"} />
             </SheetContent>
           </Sheet>
         </div>

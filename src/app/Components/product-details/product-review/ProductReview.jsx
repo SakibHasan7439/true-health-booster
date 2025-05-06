@@ -94,7 +94,7 @@ const ProductReview = () => {
               {reviewImages.map((img, index) => (
                 <div
                   key={index}
-                  className="relative h-[70px] w-[70px] lg: xl:w-[32] md:w-24 md:h-24 xl:h-32"
+                  className="relative h-[70px] w-[70px] lg: xl:w-32 md:w-24 md:h-24 xl:h-32"
                 >
                   <Image
                     src={img}

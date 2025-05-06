@@ -11,10 +11,10 @@ const ContactForm = () => {
             <SectionTitle className={"xl:!pb-[50px] lg:max-w-[350px] !mx-0 text-left"} title={"Have any Questions? Get in touch!"}/>
             <form className="md:mr-2 lg:mr-4 xl:mr-[29px]">
                 <div className="flex flex-wrap gap-2 mb-2 lg:mb-4 xl:mb-[22px] md:gap-3 lg:gap-4 xl:gap-[24px]">
-                    <Input />
-                    <Input />
-                    <Input />
-                    <Input />
+                    <Input type={"name"} placeholder={"Enter name"}/>
+                    <Input type={"number"} placeholder={"Phone number"} />
+                    <Input type={"email"} placeholder={"Enter email"} />
+                    <Input type={"text"} placeholder={"Subject"} />
                 </div>
                     <textarea 
                         name="" 

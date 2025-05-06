@@ -26,14 +26,14 @@ const CheckoutDetails = () => {
                         )
                     }
                     <tr className="border-b border-dashed pb-2">
-                        <td className="lg:py-5 text-[12px] lg:text-[16px]">SubTotal</td>
+                        <td className="lg:py-5 py-3 text-[12px] lg:text-[16px]">SubTotal</td>
                         <td className="pl-3"></td>
                         <td className="text-center text-[12px] lg:text-[16px]">450</td>
                     </tr>
                     <tr className="border-b border-dashed pb-2">
-                        <td className="text-[12px] lg:text-[16px]">Discount</td>
+                        <td className="text-[12px] py-3 lg:text-[16px]">Discount</td>
                         <td></td>
-                        <td className="text-center">--------</td>
+                        <td className="text-center py-3">-------</td>
                     </tr>
                     <tr className="pt-10">
                         <td className="lg:py-5 text-[12px] lg:text-[16px]">Total Amount</td>

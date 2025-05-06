@@ -3,11 +3,11 @@ import SectionSubtitle from "../section-subtitle/SectionSubtitle";
 import SectionTitle from "../section-title/SectionTitle";
 import CertifiedBy from "./CertifiedBy";
 
-const WhyTruemed = () => {
+const WhyTruemed = ({titleAlign, subTitleStyle}) => {
     return (
         <div className="max-w-7xl mx-auto pb-10 lg:pb-20 xl:pb-30">
-            <SectionTitle title={"Why You Choose Truemed"} />
-            <SectionSubtitle subtitle={"From field to finished product, we prioritize quality at every step."}/>
+            <SectionTitle className={titleAlign} title={"Why You Choose Truemed"} />
+            <SectionSubtitle className={subTitleStyle} subtitle={"From field to finished product, we prioritize quality at every step."}/>
             <Marquee 
                 speed={50}
                 pauseOnHover={true}>

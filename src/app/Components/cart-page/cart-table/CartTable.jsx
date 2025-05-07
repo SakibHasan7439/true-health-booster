@@ -43,7 +43,7 @@ const CartTable = () => {
               </td>
               <td className="p-4 text-[#32BADE]">${item.price}</td>
               <td className="p-4">
-                <div className="flex border p-2 rounded-md items-center">
+                <div className="flex border justify-center p-2 rounded-md items-center">
                   <button
                     onClick={() => handleQuantityChange(item.id, -1)}
                   >

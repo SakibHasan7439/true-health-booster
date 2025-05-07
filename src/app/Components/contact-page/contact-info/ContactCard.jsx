@@ -16,7 +16,7 @@ const ContactCard = ({ info }) => {
         alt="contact icon"
       />
     </div>
-    <h3 className="text-lg lg:text-2xl font-medium">{info?.title}</h3>
+    <h3 className="text-lg lg:text-2xl font-medium text-primary-color">{info?.title}</h3>
   </div>
 
   <p className="text-sm lg:text-lg border-t pt-4 lg:pt-6 xl:pt-3">{info?.contact}</p>

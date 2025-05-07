@@ -31,7 +31,7 @@ const CartTable = () => {
                         height={52}
                         src={item.image}
                         alt={item.product}
-                        className="w-[20px] h-[20px] xl:w-[52px] object-cover xl:h-[52px]"
+                        className="w-[52px] object-cover h-[52px]"
                         />
                         
                     </div>

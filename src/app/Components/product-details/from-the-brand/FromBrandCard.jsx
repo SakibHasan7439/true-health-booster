@@ -1,7 +1,7 @@
 const FromBrandCard = ({info}) => {
     return (
         <div
-            className="relative bg-cover bg-center flex flex-col justify-end h-[140px] md:h-[260px] xl:h-[400px] text-center bg-no-repeat px-2 py-2 text-white"
+            className="relative bg-cover bg-center flex flex-col justify-end h-[140px] md:h-[260px] xl:h-[400px] text-center bg-no-repeat px-2 py-2 text-white xl:px-3"
             style={{ backgroundImage: `url(${info?.img})` }}
             >
             <div className="absolute inset-0 bg-[#0000001b] z-10"></div>

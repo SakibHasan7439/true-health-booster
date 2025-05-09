@@ -6,7 +6,7 @@ import Button from "../../../Shared/Button/Button";
 import { Modal } from "antd";
 import Image from "next/image";
 
-const IntroduceTruemed = ({sectionContainer, buttonContainer, className}) => {
+const IntroduceTruemed = ({sectionContainer, buttonContainer, className, subTitleStyle}) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const showModal = () => {
@@ -26,6 +26,7 @@ const IntroduceTruemed = ({sectionContainer, buttonContainer, className}) => {
             <div className="max-w-7xl mx-auto">
                 <SectionTitle className={className} title={"Here We Introduce Truemed"}/>
                 <SectionSubtitle 
+                    subTitleStyle={subTitleStyle}
                     subtitle={"Boost your health naturally every day with our premium supplement, designed to support energy, immunity, and overall wellness using only high-quality ingredients."}
                 />
 

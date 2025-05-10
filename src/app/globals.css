@@ -257,6 +257,14 @@
     .input-field {
       @apply border w-full p-2 lg:p-4 rounded-md mt-2 mb-3 xl:mb-6;
     }
+
+    .ring-offset-background {
+      @apply border-2 !p-1 !rounded-full !border-black !cursor-pointer;
+    }
+
+    .lucide-x {
+      @apply !w-[10px] !h-[10px] !text-black !font-semibold;
+    }
     
 }
 

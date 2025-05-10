@@ -1,14 +1,24 @@
+"use client"
 import Button from "@/app/Shared/Button/Button";
-import Input from "../../contact-page/contact-form-section/Input";
+import RegisterModal from "../../modals/register-modal/RegisterModal";
+import { DialogTrigger } from "@/components/ui/dialog";
+import LoginModal from "../../modals/login-modal/LoginModal";
 
 const CheckoutForm = () => {
+
+  // Temporary variable to toggle between register and login modal
+  const isRegistered = false;
+  const handleFormSubmit = (e) =>{
+    e.preventDefault();
+  }
+
   return (
     <div>
       <h2 className="bg-[#F8F7F0] rounded-t-2xl text-left text-sm font-semibold text-primary-color p-4">
         Checkout
       </h2>
       <div>
-        <form className="border p-4 lg:p-6">
+        <form onSubmit={handleFormSubmit} className="border p-4 lg:p-6">
           {/* First Name */}
           <div className="flex flex-col gap-2 md:flex-row w-full mb-3 lg:mb-6">
             <div className="w-full">
@@ -107,9 +117,22 @@ const CheckoutForm = () => {
               />
             </div>
           </div>
-          <Button text={"Place Order"} className={"!w-full !rounded-md"}/>
+          {
+            isRegistered ? <LoginModal>
+              <DialogTrigger asChild>
+                <Button text={"Place Order"} className={"!w-full !rounded-md"}/>
+              </DialogTrigger>
+            </LoginModal> : <RegisterModal>
+                <DialogTrigger asChild>
+                  <Button text={"Place Order"} className={"!w-full !rounded-md"}/>
+                </DialogTrigger>
+              </RegisterModal>
+          }
+          
+          
         </form>
       </div>
+      <RegisterModal />
     </div>
   );
 };

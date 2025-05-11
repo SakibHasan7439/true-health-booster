@@ -1,3 +1,4 @@
+import { Headset, Send } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -91,9 +92,15 @@ const Footer = () => {
           {/* Contact Info Section */}
           <div className="lg:col-span-3 md:col-span-1">
             <h2 className="text-lg font-semibold mb-4">Contact Info</h2>
-            <ul className="space-y-2 mb-6">
-              <li>Call Us: 833 466 TRUE (8783)</li>
-              <li>Email: name@gmail.com</li>
+            <ul className="space-y-2 mb-6 lg:mb-10">
+              <li className="flex items-center gap-2">
+                <Headset className="text-[#32BADE] w-4"/>
+                <p><span className="font-medium">Call Us</span>: 833 466 TRUE (8783)</p>  
+              </li>
+              <li className="flex items-center gap-2">
+                <Send className="text-[#32BADE] w-4"/>
+                <p className="lg:text-sm xl:text-[15px]"><span className="font-medium">Email</span>:  sales@truehealthbooster.com</p>  
+              </li>
             </ul>
             <div className="flex items-center gap-3">
               <Image

@@ -265,6 +265,23 @@
     .lucide-x {
       @apply !w-[10px] !h-[10px] !text-black !font-semibold;
     }
-    
+
+  @media (min-width: 540px) and (max-width: 770px) {
+  .custom-sm-range {
+    @apply pl-4;
+    }
+  }
+
+  @media (min-width: 425px) and (max-width: 500px) {
+  .custom-sm-range {
+    @apply pl-20;
+    }
+  }
+
+  @media (max-width: 400px) {
+  .custom-sm-range {
+    @apply pl-60;
+    }
+  }
 }
 

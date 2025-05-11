@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#D3F4FA] px-2 py-4 md:py-8 text-primary-color">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-4 mb-8">
+        <div className="grid grid-cols-1 custom-grid-column md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-4 mb-8">
           {/* Logo + Description */}
           <div className="lg:col-span-4 md:col-span-2">
             <Image
@@ -102,7 +102,7 @@ const Footer = () => {
                 <p className="lg:text-sm xl:text-[15px]"><span className="font-medium">Email</span>:  sales@truehealthbooster.com</p>  
               </li>
             </ul>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center justify-center md:justify-start gap-3">
               <Image
                 width={40}
                 height={40}

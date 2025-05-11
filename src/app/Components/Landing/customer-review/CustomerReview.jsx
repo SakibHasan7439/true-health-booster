@@ -55,7 +55,7 @@ const CustomerReview = () => {
             <SectionTitle title={"Satisfy Customer's Review"} />
             <div>
                 <Swiper
-                    className="swiper-overflow-y-visible !px-2"
+                    className="!overflow-y-visible !overflow-x-hidden !p-2"
                       modules={[Pagination]}
                     //   spaceBetween={20}
                       breakpoints={{
@@ -63,7 +63,7 @@ const CustomerReview = () => {
                           slidesPerView: 1,
                          
                         },
-                        768: {
+                        550: {
                           slidesPerView: 2,
                            spaceBetween: 16
                           
@@ -75,7 +75,7 @@ const CustomerReview = () => {
                       }}
                     >
                     {
-                        reviews.map((review) => <SwiperSlide className="" 
+                        reviews.map((review) => <SwiperSlide 
                             key={review.id}>
                             <ReviewCard 
                             review={review} />

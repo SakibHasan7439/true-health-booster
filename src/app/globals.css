@@ -283,5 +283,22 @@
     @apply pl-60;
     }
   }
+
+  
+  @media (min-width: 500px) and (max-width: 770px) {
+  .custom-grid-column {
+    @apply !grid-cols-2;
+    }
+  }
+
+  @media (max-width: 380px) {
+  .custom-grid {
+    @apply !grid-cols-1;
+    }
+  }
+
+  .shadow-top {
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.1);
+}
 }
 

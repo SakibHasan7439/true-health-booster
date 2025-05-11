@@ -8,7 +8,7 @@ import {
 
 const ReviewCard = ({ review }) => {
   return (
-    <div className="p-4 md:p-6 relative rounded-2xl shadow-md bg-white">
+    <div className="p-4 md:p-6 relative rounded-2xl shadow-top bg-white">
       <Image
         src={"/images/colon.png"}
         alt="customer rating"

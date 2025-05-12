@@ -7,7 +7,8 @@ const ContactInfo = () => {
             id: 1,
             image: "/images/icon.png",
             title: "Mail us 24/7",
-            contact: "sales@truehealthbooster.com"
+            contact: "sales@healthbooster.com"
+            // contact: "Phone : (+55) 654 - 545 - 5418"
         },
 
         {

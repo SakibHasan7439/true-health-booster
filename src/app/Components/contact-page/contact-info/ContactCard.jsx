@@ -19,7 +19,7 @@ const ContactCard = ({ info }) => {
     <h3 className="text-lg lg:text-2xl font-medium text-primary-color">{info?.title}</h3>
   </div>
 
-  <p className="text-sm lg:text-lg border-t pt-4 lg:pt-6 xl:pt-3">{info?.contact}</p>
+  <p className="text-[12px] md:text-sm lg:text-lg border-t pt-4 lg:pt-6 xl:pt-3">{info?.contact}</p>
 
     <div style={{border: "10px solid white"}} className="absolute w-8 h-8 lg:w-11 lg:h-11 xl:w-17 xl:h-17 rounded-full -bottom-2 hover:bg-[#32BADE] hover:text-white flex items-center cursor-pointer justify-center -right-2">
       <ArrowUpRight/>

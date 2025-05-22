@@ -28,10 +28,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${poppins.className} antialiased`}
+        suppressHydrationWarning
       >
         <Navbar />
         {children}
-        <MobileNavbar/>
+        <MobileNavbar />
         <Footer />
       </body>
     </html>
